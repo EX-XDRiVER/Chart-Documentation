@@ -164,3 +164,47 @@ STAGE_BACKGROUND=default
 // - Sets the amount of beats starting at this timing segment to convert all notes within the region into fake notes.
 // - Fake notes look identical and cannot be hit, and do not punish the player.
 ```
+
+### Example Chart File
+
+```
+// Here's an example of a complete .xdrv file.
+
+MUSIC_TITLE=Example XDRV Chart
+MUSIC_ARTIST=Song Artist
+MUSIC_AUDIO=audio.ogg
+MUSIC_PREVIEW_START=0
+MUSIC_PREVIEW_LENGTH=10
+MUSIC_VOLUME=1
+MUSIC_OFFSET=0
+JACKET_IMAGE=jacket.jpg
+JACKET_ILLUSTRATOR=Jacket Illustrator
+CHART_AUTHOR=Chart Author
+CHART_TAGS=0,0,0,0
+CHART_BOSS=FALSE
+CHART_DIFFICULTY=BEGINNER
+CHART_LEVEL=1
+CHART_UNLOCK=BEGINNER_UNLOCK.lua
+CHART_DISPLAY_BPM=120
+CHART_BPM=120
+MODFILE_PATH=BEGINNER_MODS.lua
+RPC_HIDDEN=FALSE
+STAGE_BACKGROUND=default
+--
+000-000|00|0
+--
+000-000|00|0
+--
+000-000|00|0
+--
+000-000|00|0
+--
+100-000|00|0
+--
+000-001|00|0
+--
+100-000|00|0
+--
+000-001|00|0
+--
+```
