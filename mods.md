@@ -33,7 +33,7 @@
 --
 -- A list of all the mods in the game are as follows:
 --
--- "speed"						          => Changes the scroll speed multiplier independent of actual scroll speed.
+-- "speed"						  => Changes the scroll speed multiplier independent of actual scroll speed.
 -- 
 -- "camera_position_x" 		      => Move the camera along the X axis.
 -- "camera_position_y" 		      => Move the camera along the Y axis.
@@ -42,12 +42,12 @@
 -- "camera_rotation_y" 		      => Rotate the camera around the Y axis.
 -- "camera_rotation_z" 		      => Rotate the camera around the Z axis.
 -- 
--- "note_move_x" 				        => Move all notes along the X axis.
--- "note_move_y" 				        => Move all notes along the Y axis.
--- "note_move_z" 				        => Move all notes along the Z axis.
--- "note_rotate_x" 			        => Rotate the notes around the X axis.
--- "note_rotate_y" 			        => Rotate the notes around the Y axis.
--- "note_rotate_z" 			        => Rotate the notes around the Z axis.
+-- "note_move_x" 				  => Move all notes along the X axis.
+-- "note_move_y" 				  => Move all notes along the Y axis.
+-- "note_move_z" 				  => Move all notes along the Z axis.
+-- "note_rotate_x" 			      => Rotate the notes around the X axis.
+-- "note_rotate_y" 			      => Rotate the notes around the Y axis.
+-- "note_rotate_z" 			      => Rotate the notes around the Z axis.
 -- 
 -- "note1_move_x" 				      => Move notes in column 1 along the X axis.
 -- "note1_move_y" 				      => Move notes in column 1 along the Y axis.
@@ -112,16 +112,16 @@
 -- "trackright_rotate_y" 	      => Rotate the right track around the Y axis.
 -- "trackright_rotate_z" 	      => Rotate the right track around the Z axis.
 -- 
--- "gear_move_x" 				        => Move both gears along the X axis.
--- "gear_move_y" 				        => Move both gears along the Y axis.
--- "gear_move_z" 				        => Move both gears along the Z axis.
--- "gear_rotate_x" 			        => Rotate both gears around the X axis.
--- "gear_rotate_y" 			        => Rotate both gears around the Y axis.
--- "gear_rotate_z" 			        => Rotate both gears around the Z axis.
+-- "gear_move_x" 				  => Move both gears along the X axis.
+-- "gear_move_y" 				  => Move both gears along the Y axis.
+-- "gear_move_z" 				  => Move both gears along the Z axis.
+-- "gear_rotate_x" 			      => Rotate both gears around the X axis.
+-- "gear_rotate_y" 			      => Rotate both gears around the Y axis.
+-- "gear_rotate_z" 			      => Rotate both gears around the Z axis.
 -- 
--- "gearleft_move_x" 			      => Move the left gear along the X axis.
--- "gearleft_move_y" 			      => Move the left gear along the Y axis.
--- "gearleft_move_z" 			      => Move the left gear along the Z axis.
+-- "gearleft_move_x" 			  => Move the left gear along the X axis.
+-- "gearleft_move_y" 			  => Move the left gear along the Y axis.
+-- "gearleft_move_z" 			  => Move the left gear along the Z axis.
 -- "gearleft_rotate_x" 		      => Rotate the left gear around the X axis.
 -- "gearleft_rotate_y" 		      => Rotate the left gear around the Y axis.
 -- "gearleft_rotate_z" 		      => Rotate the left gear around the Z axis.
@@ -134,19 +134,19 @@
 -- "gearright_rotate_z" 	      => Rotate the right gear around the Z axis.
 -- 
 -- "black_bar_top_position" 	  => Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
--- "black_bar_bottom_position"  => Move the bottom black bar up onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_bottom_position"    => Move the bottom black bar up onto the screen. A value of 1 will completely cover the screen.
 -- "black_bar_left_position" 	  => Move the left black bar right onto the screen. A value of 1 will completely cover the screen.
--- "black_bar_right_position" 	=> Move the right black bar left onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_right_position" 	  => Move the right black bar left onto the screen. A value of 1 will completely cover the screen.
 -- 
 -- "black_bar_top_rotation" 	  => Rotate the top black bar in degrees from 0-360.
--- "black_bar_bottom_rotation"  => Rotate the bottom black bar in degrees from 0-360.
+-- "black_bar_bottom_rotation"    => Rotate the bottom black bar in degrees from 0-360.
 -- "black_bar_left_rotation" 	  => Rotate the left black bar in degrees from 0-360.
--- "black_bar_right_rotation" 	=> Rotate the right black bar in degrees from 0-360.
+-- "black_bar_right_rotation" 	  => Rotate the right black bar in degrees from 0-360.
 -- 
--- "lane_color_red" 			      => Change the track's red color channel.
--- "lane_color_green" 			    => Change the track's green color channel.
--- "lane_color_blue" 			      => Change the track's blue color channel.
--- "lane_color_alpha" 			    => Change the track's alpha color channel.
+-- "lane_color_red" 			  => Change the track's red color channel.
+-- "lane_color_green" 			  => Change the track's green color channel.
+-- "lane_color_blue" 			  => Change the track's blue color channel.
+-- "lane_color_alpha" 			  => Change the track's alpha color channel.
 --
 -- A list of all ease types are as follows:
 --
