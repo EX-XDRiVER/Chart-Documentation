@@ -73,3 +73,94 @@ RPC_HIDDEN=FALSE
 // Leave this value blank if you don't know what you're doing!
 STAGE_BACKGROUND=default
 ```
+
+### Chart Body: Notes
+```
+// Note Lines are formatted like so:
+// 000-000|00|0
+// Notes on the left track are the first 3 numeric values.
+// Notes on the right track are the second 3 numeric values.
+// Gears are the 2 numeric values surrounded by pipe symbols.
+// Drifts are indicated by the last numeric value.
+//
+// All kinds of notes can be in different states:
+//
+// For the main notes:
+// - 0 is an empty space.
+// - 1 is a tap note.
+// - 2 is the start of a hold. Inbetween the hold 'head' and 'tail', there can only be 0s.
+// - 4 is the hold tail, which ends an existing hold.
+//
+// For gears:
+// - 0 is an empty space.
+// - 1 is a gear head.
+// - 2 is a gear tail.
+//
+// For drifts:
+// - 0 is an empty space.
+// - 1 is the start of a left drift.
+// - 2 is the start of a right drift.
+// - 3 is the end for both kinds of drifts.
+//
+// To indicate different quantizations of notes (4ths, 8ths, 12ths, 16ths, 24ths, 32nds, 48ths, 64ths, 96ths, 192nds),
+// you must separate each beat by a "beat break".
+// A beat break is simply two hyphens back to back, like so:
+// --
+// To tell the game where your chart metadata and chart body are separated, you need to place the first beat break between them.
+// For example: Here is a portion of the chart body for Metronome.
+//
+// .. chart metadata goes here ..
+--
+000-000|00|0
+--
+000-000|00|0
+--
+000-000|00|0
+--
+000-000|00|0
+--
+100-000|00|0
+--
+000-001|00|0
+--
+100-000|00|0
+--
+000-001|00|0
+--
+// end of file
+```
+
+### Chart Body: Timing Segments
+
+```
+// During a chart, different 'timing segments' can show up in a chart.
+// These timing segments are placed on the line before the note row you want to make them occur on.
+// For example:
+// #BPM=100
+// 000-000|00|0
+// This will set the chart's current BPM to 100 once it reaches the note row.
+
+// Different timing segments include:
+// #BPM
+// - Used to indicate a BPM change during a chart to the specified BPM.
+// #WARP
+// - 'Warps' ahead by the amount of beats specified. Any notes within this region are automatically converted to fakes.
+// #STOP
+// - Stops the chart for a set amount of beats. (This is converted to seconds by taking the current BPM.)
+// #STOP_SECONDS
+// - Stops the chart for a set amount of time in seconds.
+// #SCROLL
+// - Changes the scroll speed of the chart. Affects note positions. Accepts negative values.
+// #TIME_SIGNATURE
+// - Changes the current time signature. Only accepts an integer. (The 'Top Number' of the time signature)
+// #COMBO_TICKS
+// - Sets how often you'll gain combo from holding down a hold or gear.
+// - A value of '1' will make it occur once per beat. '2' will occur twice per beat, and so on.
+// #COMBO
+// - Unused. Used to be a combo multiplier, but is now non-functional.
+// #LABEL
+// - Labels for strings of text, purely cosmetic, but could be used for mods in the future.
+// #FAKE
+// - Sets the amount of beats starting at this timing segment to convert all notes within the region into fake notes.
+// - Fake notes look identical and cannot be hit, and do not punish the player.
+```
