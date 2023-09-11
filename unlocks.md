@@ -36,10 +36,12 @@ All of these functions will execute relating to the chart you are looking up:
    - ..Leaving this out will check both.
   - 2: 'Folder Name/' will search for a song in a specific folder.
   - 3: 'Song Name' will get the song by its name.
+
   - For example: 'AdditionalSongs/My Folder/Song Name'
    - ..will search only additional songs,
    - ..in the 'My Folder' folder,
    - ..for a song named 'Song Name'.
+
   - Alternatively: 'My Folder/Song Name'
    - ..will search both additional songs and resources,
    - ..in the 'My Folder' folder,
