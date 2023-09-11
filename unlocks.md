@@ -40,6 +40,10 @@ All of these functions will execute relating to the chart you are looking up:
    - ..will search only additional songs,
    - ..in the 'My Folder' folder,
    - ..for a song named 'Song Name'.
+  - Alternatively: 'My Folder/Song Name'
+   - ..will search both additional songs and resources,
+   - ..in the 'My Folder' folder,
+   - ..for a song named 'Song Name'.
  - Note 3: If multiple charts are a match, it will check both of them.
   - (If at least one is met, the condition succeeds.)
 
