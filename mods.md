@@ -33,120 +33,217 @@
 --
 -- A list of all the mods in the game are as follows:
 --
--- "speed"						  => Changes the scroll speed multiplier independent of actual scroll speed.
+-- "speed"
+-- - Changes the scroll speed multiplier independent of actual scroll speed.
 -- 
--- "camera_position_x" 		      => Move the camera along the X axis.
--- "camera_position_y" 		      => Move the camera along the Y axis.
--- "camera_position_z" 		      => Move the camera along the Z axis.
--- "camera_rotation_x" 		      => Rotate the camera around the X axis.
--- "camera_rotation_y" 		      => Rotate the camera around the Y axis.
--- "camera_rotation_z" 		      => Rotate the camera around the Z axis.
+-- "camera_position_x"
+-- - Move the camera along the X axis.
+-- "camera_position_y"       
+-- - Move the camera along the Y axis.
+-- "camera_position_z"       
+-- - Move the camera along the Z axis.
+-- "camera_rotation_x"       
+-- - Rotate the camera around the X axis.
+-- "camera_rotation_y"       
+-- - Rotate the camera around the Y axis.
+-- "camera_rotation_z"       
+-- - Rotate the camera around the Z axis.
 -- 
--- "note_move_x" 				  => Move all notes along the X axis.
--- "note_move_y" 				  => Move all notes along the Y axis.
--- "note_move_z" 				  => Move all notes along the Z axis.
--- "note_rotate_x" 			      => Rotate the notes around the X axis.
--- "note_rotate_y" 			      => Rotate the notes around the Y axis.
--- "note_rotate_z" 			      => Rotate the notes around the Z axis.
+-- "note_move_x"   
+-- - Move all notes along the X axis.
+-- "note_move_y"   
+-- - Move all notes along the Y axis.
+-- "note_move_z"   
+-- - Move all notes along the Z axis.
+-- "note_rotate_x"       
+-- - Rotate the notes around the X axis.
+-- "note_rotate_y"       
+-- - Rotate the notes around the Y axis.
+-- "note_rotate_z"       
+-- - Rotate the notes around the Z axis.
 -- 
--- "note1_move_x" 				      => Move notes in column 1 along the X axis.
--- "note1_move_y" 				      => Move notes in column 1 along the Y axis.
--- "note1_move_z" 				      => Move notes in column 1 along the Z axis.
--- "note1_rotate_x" 			      => Rotate notes in column 1 around the X axis.
--- "note1_rotate_y" 			      => Rotate notes in column 1 around the X axis.
--- "note1_rotate_z" 			      => Rotate notes in column 1 around the X axis.
+-- "note1_move_x"       
+-- - Move notes in column 1 along the X axis.
+-- "note1_move_y"       
+-- - Move notes in column 1 along the Y axis.
+-- "note1_move_z"       
+-- - Move notes in column 1 along the Z axis.
+-- "note1_rotate_x"       
+-- - Rotate notes in column 1 around the X axis.
+-- "note1_rotate_y"       
+-- - Rotate notes in column 1 around the X axis.
+-- "note1_rotate_z"       
+-- - Rotate notes in column 1 around the X axis.
 -- 
--- "note2_move_x" 				      => Move notes in column 2 along the X axis.
--- "note2_move_y" 				      => Move notes in column 2 along the Y axis.
--- "note2_move_z" 				      => Move notes in column 2 along the Z axis.
--- "note2_rotate_x" 			      => Rotate notes in column 2 around the X axis.
--- "note2_rotate_y" 			      => Rotate notes in column 2 around the X axis.
--- "note2_rotate_z" 			      => Rotate notes in column 2 around the X axis.
+-- "note2_move_x"       
+-- - Move notes in column 2 along the X axis.
+-- "note2_move_y"       
+-- - Move notes in column 2 along the Y axis.
+-- "note2_move_z"       
+-- - Move notes in column 2 along the Z axis.
+-- "note2_rotate_x"       
+-- - Rotate notes in column 2 around the X axis.
+-- "note2_rotate_y"       
+-- - Rotate notes in column 2 around the X axis.
+-- "note2_rotate_z"       
+-- - Rotate notes in column 2 around the X axis.
 -- 
--- "note3_move_x" 				      => Move notes in column 3 along the X axis.
--- "note3_move_y" 				      => Move notes in column 3 along the Y axis.
--- "note3_move_z" 				      => Move notes in column 3 along the Z axis.
--- "note3_rotate_x" 			      => Rotate notes in column 3 around the X axis.
--- "note3_rotate_y" 			      => Rotate notes in column 3 around the X axis.
--- "note3_rotate_z" 			      => Rotate notes in column 3 around the X axis.
+-- "note3_move_x"       
+-- - Move notes in column 3 along the X axis.
+-- "note3_move_y"       
+-- - Move notes in column 3 along the Y axis.
+-- "note3_move_z"       
+-- - Move notes in column 3 along the Z axis.
+-- "note3_rotate_x"       
+-- - Rotate notes in column 3 around the X axis.
+-- "note3_rotate_y"       
+-- - Rotate notes in column 3 around the X axis.
+-- "note3_rotate_z"       
+-- - Rotate notes in column 3 around the X axis.
 -- 
--- "note4_move_x" 				      => Move notes in column 4 along the X axis.
--- "note4_move_y" 				      => Move notes in column 4 along the Y axis.
--- "note4_move_z" 				      => Move notes in column 4 along the Z axis.
--- "note4_rotate_x" 			      => Rotate notes in column 4 around the X axis.
--- "note4_rotate_y" 			      => Rotate notes in column 4 around the X axis.
--- "note4_rotate_z" 			      => Rotate notes in column 4 around the X axis.
+-- "note4_move_x"       
+-- - Move notes in column 4 along the X axis.
+-- "note4_move_y"       
+-- - Move notes in column 4 along the Y axis.
+-- "note4_move_z"       
+-- - Move notes in column 4 along the Z axis.
+-- "note4_rotate_x"       
+-- - Rotate notes in column 4 around the X axis.
+-- "note4_rotate_y"       
+-- - Rotate notes in column 4 around the X axis.
+-- "note4_rotate_z"       
+-- - Rotate notes in column 4 around the X axis.
 -- 
--- "note5_move_x" 				      => Move notes in column 5 along the X axis.
--- "note5_move_y" 				      => Move notes in column 5 along the Y axis.
--- "note5_move_z" 				      => Move notes in column 5 along the Z axis.
--- "note5_rotate_x" 			      => Rotate notes in column 5 around the X axis.
--- "note5_rotate_y" 			      => Rotate notes in column 5 around the X axis.
--- "note5_rotate_z" 			      => Rotate notes in column 5 around the X axis.
+-- "note5_move_x"       
+-- - Move notes in column 5 along the X axis.
+-- "note5_move_y"       
+-- - Move notes in column 5 along the Y axis.
+-- "note5_move_z"       
+-- - Move notes in column 5 along the Z axis.
+-- "note5_rotate_x"       
+-- - Rotate notes in column 5 around the X axis.
+-- "note5_rotate_y"       
+-- - Rotate notes in column 5 around the X axis.
+-- "note5_rotate_z"       
+-- - Rotate notes in column 5 around the X axis.
 -- 
--- "note6_move_x" 				      => Move notes in column 6 along the X axis.
--- "note6_move_y" 				      => Move notes in column 6 along the Y axis.
--- "note6_move_z" 				      => Move notes in column 6 along the Z axis.
--- "note6_rotate_x" 			      => Rotate notes in column 6 around the X axis.
--- "note6_rotate_y" 			      => Rotate notes in column 6 around the X axis.
--- "note6_rotate_z" 			      => Rotate notes in column 6 around the X axis.
+-- "note6_move_x"       
+-- - Move notes in column 6 along the X axis.
+-- "note6_move_y"       
+-- - Move notes in column 6 along the Y axis.
+-- "note6_move_z"       
+-- - Move notes in column 6 along the Z axis.
+-- "note6_rotate_x"       
+-- - Rotate notes in column 6 around the X axis.
+-- "note6_rotate_y"       
+-- - Rotate notes in column 6 around the X axis.
+-- "note6_rotate_z"       
+-- - Rotate notes in column 6 around the X axis.
 -- 
--- "track_move_x" 				      => Move both tracks along the X axis.
--- "track_move_y" 				      => Move both tracks along the Y axis.
--- "track_move_z" 				      => Move both tracks along the Z axis.
--- "track_rotate_x" 			      => Rotate both tracks around the X axis.
--- "track_rotate_y" 			      => Rotate both tracks around the Y axis.
--- "track_rotate_z" 			      => Rotate both tracks around the Z axis.
+-- "track_move_x"       
+-- - Move both tracks along the X axis.
+-- "track_move_y"       
+-- - Move both tracks along the Y axis.
+-- "track_move_z"       
+-- - Move both tracks along the Z axis.
+-- "track_rotate_x"       
+-- - Rotate both tracks around the X axis.
+-- "track_rotate_y"       
+-- - Rotate both tracks around the Y axis.
+-- "track_rotate_z"       
+-- - Rotate both tracks around the Z axis.
 -- 
--- "trackleft_move_x" 		      => Move the left track along the X axis.
--- "trackleft_move_y" 		      => Move the left track along the Y axis.
--- "trackleft_move_z" 		      => Move the left track along the Z axis.
--- "trackleft_rotate_x" 	      => Rotate the left track around the X axis.
--- "trackleft_rotate_y" 	      => Rotate the left track around the Y axis.
--- "trackleft_rotate_z" 	      => Rotate the left track around the Z axis.
+-- "trackleft_move_x"       
+-- - Move the left track along the X axis.
+-- "trackleft_move_y"       
+-- - Move the left track along the Y axis.
+-- "trackleft_move_z"       
+-- - Move the left track along the Z axis.
+-- "trackleft_rotate_x"       
+-- - Rotate the left track around the X axis.
+-- "trackleft_rotate_y"       
+-- - Rotate the left track around the Y axis.
+-- "trackleft_rotate_z"       
+-- - Rotate the left track around the Z axis.
 -- 
--- "trackright_move_x" 		      => Move the right track along the X axis.
--- "trackright_move_y" 		      => Move the right track along the Y axis.
--- "trackright_move_z" 		      => Move the right track along the Z axis.
--- "trackright_rotate_x" 	      => Rotate the right track around the X axis.
--- "trackright_rotate_y" 	      => Rotate the right track around the Y axis.
--- "trackright_rotate_z" 	      => Rotate the right track around the Z axis.
+-- "trackright_move_x"       
+-- - Move the right track along the X axis.
+-- "trackright_move_y"       
+-- - Move the right track along the Y axis.
+-- "trackright_move_z"       
+-- - Move the right track along the Z axis.
+-- "trackright_rotate_x"       
+-- - Rotate the right track around the X axis.
+-- "trackright_rotate_y"       
+-- - Rotate the right track around the Y axis.
+-- "trackright_rotate_z"       
+-- - Rotate the right track around the Z axis.
 -- 
--- "gear_move_x" 				  => Move both gears along the X axis.
--- "gear_move_y" 				  => Move both gears along the Y axis.
--- "gear_move_z" 				  => Move both gears along the Z axis.
--- "gear_rotate_x" 			      => Rotate both gears around the X axis.
--- "gear_rotate_y" 			      => Rotate both gears around the Y axis.
--- "gear_rotate_z" 			      => Rotate both gears around the Z axis.
+-- "gear_move_x"   
+-- - Move both gears along the X axis.
+-- "gear_move_y"   
+-- - Move both gears along the Y axis.
+-- "gear_move_z"   
+-- - Move both gears along the Z axis.
+-- "gear_rotate_x"       
+-- - Rotate both gears around the X axis.
+-- "gear_rotate_y"       
+-- - Rotate both gears around the Y axis.
+-- "gear_rotate_z"       
+-- - Rotate both gears around the Z axis.
 -- 
--- "gearleft_move_x" 			  => Move the left gear along the X axis.
--- "gearleft_move_y" 			  => Move the left gear along the Y axis.
--- "gearleft_move_z" 			  => Move the left gear along the Z axis.
--- "gearleft_rotate_x" 		      => Rotate the left gear around the X axis.
--- "gearleft_rotate_y" 		      => Rotate the left gear around the Y axis.
--- "gearleft_rotate_z" 		      => Rotate the left gear around the Z axis.
+-- "gearleft_move_x"   
+-- - Move the left gear along the X axis.
+-- "gearleft_move_y"   
+-- - Move the left gear along the Y axis.
+-- "gearleft_move_z"   
+-- - Move the left gear along the Z axis.
+-- "gearleft_rotate_x"       
+-- - Rotate the left gear around the X axis.
+-- "gearleft_rotate_y"       
+-- - Rotate the left gear around the Y axis.
+-- "gearleft_rotate_z"       
+-- - Rotate the left gear around the Z axis.
 -- 
--- "gearright_move_x" 		      => Move the right gear along the X axis.
--- "gearright_move_y" 		      => Move the right gear along the Y axis.
--- "gearright_move_z" 		      => Move the right gear along the Z axis.
--- "gearright_rotate_x" 	      => Rotate the right gear around the X axis.
--- "gearright_rotate_y" 	      => Rotate the right gear around the Y axis.
--- "gearright_rotate_z" 	      => Rotate the right gear around the Z axis.
+-- "gearright_move_x"       
+-- - Move the right gear along the X axis.
+-- "gearright_move_y"       
+-- - Move the right gear along the Y axis.
+-- "gearright_move_z"       
+-- - Move the right gear along the Z axis.
+-- "gearright_rotate_x"       
+-- - Rotate the right gear around the X axis.
+-- "gearright_rotate_y"       
+-- - Rotate the right gear around the Y axis.
+-- "gearright_rotate_z"       
+-- - Rotate the right gear around the Z axis.
 -- 
--- "black_bar_top_position" 	  => Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
--- "black_bar_bottom_position"    => Move the bottom black bar up onto the screen. A value of 1 will completely cover the screen.
--- "black_bar_left_position" 	  => Move the left black bar right onto the screen. A value of 1 will completely cover the screen.
--- "black_bar_right_position" 	  => Move the right black bar left onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_top_position"   
+-- - Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_bottom_position"    
+-- - Move the bottom black bar up onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_left_position"   
+-- - Move the left black bar right onto the screen. A value of 1 will completely cover the screen.
+-- "black_bar_right_position"   
+-- - Move the right black bar left onto the screen. A value of 1 will completely cover the screen.
 -- 
--- "black_bar_top_rotation" 	  => Rotate the top black bar in degrees from 0-360.
--- "black_bar_bottom_rotation"    => Rotate the bottom black bar in degrees from 0-360.
--- "black_bar_left_rotation" 	  => Rotate the left black bar in degrees from 0-360.
--- "black_bar_right_rotation" 	  => Rotate the right black bar in degrees from 0-360.
+-- "black_bar_top_rotation"   
+-- - Rotate the top black bar in degrees from 0-360.
+-- "black_bar_bottom_rotation"    
+-- - Rotate the bottom black bar in degrees from 0-360.
+-- "black_bar_left_rotation"   
+-- - Rotate the left black bar in degrees from 0-360.
+-- "black_bar_right_rotation"   
+-- - Rotate the right black bar in degrees from 0-360.
 -- 
--- "lane_color_red" 			  => Change the track's red color channel.
--- "lane_color_green" 			  => Change the track's green color channel.
--- "lane_color_blue" 			  => Change the track's blue color channel.
--- "lane_color_alpha" 			  => Change the track's alpha color channel.
+-- "lane_color_red"   
+-- - Change the track's red color channel.
+-- "lane_color_green"   
+-- - Change the track's green color channel.
+-- "lane_color_blue"   
+-- - Change the track's blue color channel.
+-- "lane_color_alpha"   
+-- - Change the track's alpha color channel.
 --
 -- A list of all ease types are as follows:
 --
