@@ -30,12 +30,14 @@ bool xdrv.HasClearTimeInRange(float minClearTime, float maxClearTime);
 
 All of these functions will execute relating to the chart you are looking up:
  - Note 1: Difficulty means 0 = BEGINNER, 1 = NORMAL, 2 = HYPER, 3 = EXTREME.
- - Note 2: The song name is NOT case sensitive.
+ - Note 2: The song name must be formatted in one of two ways:
+  - 1: 'Resources/' or 'AdditionalSongs/' will limit the search to only resources or additional songs. Leaving it out will check both.
+  - 2: 'Folder Name/' will search for a song in a specific folder, this is required.
+  - 3: 'Song Name' will get the song by its name.
+  - For example: 'AdditionalSongs/My Folder/Song Name' will search only additional songs, in the 'My Folder' folder, for a song named 'Song Name'.
  - Note 3: If multiple charts are a match, it will check both of them. (If at least one is met, the condition succeeds.)
 
 bool xdrv.HasClearedChartByNameAndDifficulty(string songName, int difficulty);
-bool xdrv.HasClearedChartByNameAndDifficultyResourcesOnly(string songName, int difficulty); - May get replaced. Filters any songs in additional song folders out.
-bool xdrv.HasClearedChartByNameAndDifficultyAdditionalSongsOnly(string songName, int difficulty); - May get replaced. Filters any songs in resources (the base game) out.
 
 bool xdrv.HasMinimumScoreByNameAndDifficulty(string songName, int difficulty, int score);
 bool xdrv.HasMaximumScoreByNameAndDifficulty(string songName, int difficulty, int score);
