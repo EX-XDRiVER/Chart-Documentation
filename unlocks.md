@@ -65,6 +65,9 @@ bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty
 
 bool xdrv.IsChartUnlockedByNameAndDifficulty(string songName, int difficulty);
 
+int xdrv.GetBestMedalByNameAndDifficulty(string songName, int difficulty);
+int xdrv.GetBestWingsByNameAndDifficulty(string songName, int difficulty);
+
 ]]--
 
 -- To set the text for an unlock condition:
