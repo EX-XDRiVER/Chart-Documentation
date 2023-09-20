@@ -289,4 +289,7 @@
 -- Spike
 -- Inverse
 -- Instant
+-- SmoothStep
+-- SmootherStep
+-- SmoothestStep
 ```
