@@ -40,7 +40,7 @@ JACKET_ILLUSTRATOR=My Jacket Illustrator
 // CHART_AUTHOR, is the name(s) or username(s) of the person who made this chart.
 CHART_AUTHOR=Me
 
-// CHART_TAGS, is an array of 4 floats, currently unused by the game. May be used in the future for 'radar values'.
+// CHART_TAGS, is an array of 4 floats, currently unused by the game.
 CHART_TAGS=0,0,0,0
 
 // CHART_BOSS, is a boolean, currently unused by the game. May be used in the future for harder lifebars or special content.
