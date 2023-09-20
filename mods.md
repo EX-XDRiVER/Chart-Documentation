@@ -5,7 +5,7 @@
 -- There are two kinds of mod initialization calls, "Mod" and "Ease".
 --
 -- For basic mods, first we need to call the container object which stores all of our chart mods.
--- To call this object's method, we use 'xdrv.Mod'.
+-- To call this object's method, we use 'xdrv.Mod' or 'xdrv.Set'.
 -- The arguments it takes are:
 -- - The mod name
 -- - The value to set the mod to
@@ -14,6 +14,8 @@
 --
 -- Putting this together, we get:
 -- xdrv.Mod("speed", 1, "time", 8);
+-- OR
+-- xdrv.Set("speed", 1, "time", 8);
 -- Which sets the mod "speed", to a value of 1, at exactly 8 seconds into the chart.
 --
 -- For eased mods, we need to call 'xdrv.Ease'.
