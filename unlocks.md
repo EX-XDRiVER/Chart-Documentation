@@ -8,7 +8,8 @@ Available methods in the "xdrv" object include:
 int xdrv.GetSongCount();
 int xdrv.GetChartCount();
 long xdrv.GetCurrentTimestamp();
-bool xdrv.SetUnlockCondition(string text);
+void xdrv.SetUnlockCondition(string text);
+void xdrv.SetHidden(bool hiddenState); 
 
 All of these functions will execute relating to the chart you are making this unlock condition for:
 
