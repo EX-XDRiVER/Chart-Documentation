@@ -7,9 +7,9 @@ Here you'll find information on the file formats to create custom charts for EX-
 - [Unlock Documentation / .lua](unlocks.md)
 
 ## ⚠️ Creation and Distribution of Custom Content
-- You should only create and distribute custom content with a music artist's and illustrator's work if you have permission from the music artists and illustrators.
-  - **For remixes** of songs, you must **get permission from both the original music artists and the remixers**.
-  - If any party declines the use of their work, you cannot use it.
+- Users should only create and distribute custom content with a music artist's and illustrator's work if users have permission from the music artists and illustrators.
+  - **For remixes** of songs, users must **get permission from both the original music artists and the remixers**.
+  - If any party declines the use of their work, users cannot use it.
 
 - <ins>**Distributing custom content without proper permission in our Discord server may result in a ban.**</ins>
   - **These rules extend to distributing media (for example, screenshots or video) with said custom content.**
