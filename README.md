@@ -15,9 +15,9 @@ Here you'll find information on the file formats to create custom charts for EX-
 - <ins>**Distributing custom content without proper permission in our Discord server may result in a ban.**</ins>
   - **These rules extend to distributing media (for example, screenshots or video) with said custom content.**
 
-- **For <ins>music artists and illustrators who want to publicly allow or deny the use of your work</ins>**, please send us an email at **[contact@xdrv.team](mailto:contact@xdrv.team)**.
+- **For <ins>music artists and illustrators who want to publicly allow or deny the use of your work</ins>**, send us an email at **[contact@xdrv.team](mailto:contact@xdrv.team)**.
 
-- **For <ins>users who want to check if a music artist or illustrator has publicly allowed or denied the use of their work</ins>**, please view our spreadsheet **[here](https://docs.google.com/spreadsheets/d/1proQiFfMdWsOHJ4aqs6q88aLru0LDq-RmH7CCd0Tugk)**.
+- **For <ins>users who want to check if a music artist or illustrator has publicly allowed or denied the use of their work</ins>**, view our spreadsheet **[here](https://docs.google.com/spreadsheets/d/1proQiFfMdWsOHJ4aqs6q88aLru0LDq-RmH7CCd0Tugk)**.
 
 ### Disclaimers
 - We cannot regulate custom content outside of our Discord server, and we ask that users follow these rules.
