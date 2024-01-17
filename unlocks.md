@@ -8,6 +8,7 @@ All of these functions will execute relating to the chart you are making this un
 void xdrv.SetUnlockCondition(string text);
 void xdrv.SetHidden(bool hidden);
 void xdrv.SetEXMeterExclusive(bool exclusive);
+
 bool xdrv.HasClearedThisChart();
 int  xdrv.GetBestMedal();
 int  xdrv.GetBestWings();
@@ -57,6 +58,9 @@ bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty
 bool xdrv.IsChartUnlockedByNameAndDifficulty(string songName, int difficulty);
 int  xdrv.GetBestMedalByNameAndDifficulty(string songName, int difficulty);
 int  xdrv.GetBestWingsByNameAndDifficulty(string songName, int difficulty);
+
+Other various functions include:
+
 int  xdrv.GetSongCount();
 int  xdrv.GetChartCount();
 long xdrv.GetCurrentTimestamp();
