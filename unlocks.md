@@ -3,31 +3,24 @@
 ```
 --[[
 
-Available methods in the "xdrv" object include:
-
-int xdrv.GetSongCount();
-int xdrv.GetChartCount();
-long xdrv.GetCurrentTimestamp();
-void xdrv.SetUnlockCondition(string text);
-void xdrv.SetHidden(bool hiddenState); 
-
 All of these functions will execute relating to the chart you are making this unlock condition for:
 
+void xdrv.SetUnlockCondition(string text);
+void xdrv.SetHidden(bool hidden);
+void xdrv.SetEXMeterExclusive(bool exclusive);
 bool xdrv.HasClearedThisChart();
-int xdrv.GetBestMedal();
-int xdrv.GetBestWings();
-
+int  xdrv.GetBestMedal();
+int  xdrv.GetBestWings();
 bool xdrv.HasMinimumScore(int score);
 bool xdrv.HasMaximumScore(int score);
-bool xdrv.HasScoreInRange(int minScore, int maxScore);
-
-bool xdrv.HasMinimumEXScore(int exScore);
-bool xdrv.HasMaximumEXScore(int exScore);
-bool xdrv.HasEXScoreInRange(int minExScore, int maxExScore);
-
-bool xdrv.HasMinimumClearTime(float timeSeconds);
-bool xdrv.HasMaximumClearTime(float timeSeconds);
-bool xdrv.HasClearTimeInRange(float minClearTime, float maxClearTime);
+bool xdrv.HasScoreInRange(int min, int max);
+bool xdrv.HasMinimumEXScore(int score);
+bool xdrv.HasMaximumEXScore(int score);
+bool xdrv.HasEXScoreInRange(int min, int max);
+bool xdrv.HasMinimumClearTime(float time);
+bool xdrv.HasMaximumClearTime(float time);
+bool xdrv.HasClearTimeInRange(float min, float max);
+bool xdrv.IsEXStageAvailable();
 
 All of these functions will execute relating to the chart you are looking up:
  - Note 1: Difficulty means 0 = BEGINNER, 1 = NORMAL, 2 = HYPER, 3 = EXTREME.
@@ -50,24 +43,23 @@ All of these functions will execute relating to the chart you are looking up:
  - Note 3: If multiple charts are a match, it will check both of them.
   - (If at least one is met, the condition succeeds.)
 
+bool xdrv.HasClearedChartByName(string songName);
 bool xdrv.HasClearedChartByNameAndDifficulty(string songName, int difficulty);
-
 bool xdrv.HasMinimumScoreByNameAndDifficulty(string songName, int difficulty, int score);
 bool xdrv.HasMaximumScoreByNameAndDifficulty(string songName, int difficulty, int score);
 bool xdrv.HasScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore);
-
-bool xdrv.HasMinimumEXScoreByNameAndDifficulty(string songName, int difficulty, int exScore);
-bool xdrv.HasMaximumEXScoreByNameAndDifficulty(string songName, int difficulty, int exScore);
-bool xdrv.HasEXScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minExScore, int maxExScore);
-
+bool xdrv.HasMinimumEXScoreByNameAndDifficulty(string songName, int difficulty, int score);
+bool xdrv.HasMaximumEXScoreByNameAndDifficulty(string songName, int difficulty, int score);
+bool xdrv.HasEXScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore);
 bool xdrv.HasMinimumClearTimeByNameAndDifficulty(string songName, int difficulty, float time);
 bool xdrv.HasMaximumClearTimeByNameAndDifficulty(string songName, int difficulty, float time);
-bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTimeSeconds, float maxTimeSeconds);
-
+bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTime, float maxTime);
 bool xdrv.IsChartUnlockedByNameAndDifficulty(string songName, int difficulty);
-
-int xdrv.GetBestMedalByNameAndDifficulty(string songName, int difficulty);
-int xdrv.GetBestWingsByNameAndDifficulty(string songName, int difficulty);
+int  xdrv.GetBestMedalByNameAndDifficulty(string songName, int difficulty);
+int  xdrv.GetBestWingsByNameAndDifficulty(string songName, int difficulty);
+int  xdrv.GetSongCount();
+int  xdrv.GetChartCount();
+long xdrv.GetCurrentTimestamp();
 
 ]]--
 
