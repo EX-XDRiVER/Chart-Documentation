@@ -13,6 +13,9 @@ MUSIC_TITLE=Song Title
 // However, any methods that attempt to get the song (via unlocks or other cache related code) will still refer to MUSIC_TITLE.
 ALTERNATE_TITLE=Chart Specific Song Title
 
+// MUSIC_ARTIST, is the song's artist or musician name.
+MUSIC_ARTIST=Song Artist
+
 // MUSIC_AUDIO, is the file path to the audio file.
 MUSIC_AUDIO=audio.ogg
 
@@ -64,12 +67,20 @@ CHART_BPM=120
 // MODFILE_PATH, is a file path to the modfile .lua. More documentation about modfiles in mods.md.
 MODFILE_PATH=EXTREME_MODS.lua
 
+// DISABLE_LEADERBOARD_UPLOADING, is a boolean that disables leaderboards if enabled. This is used for songs like Metronome.
+// Currently, custom charts don't have leaderboards, so this is unused.
+DISABLE_LEADERBOARD_UPLOADING=FALSE
+
 // RPC_HIDDEN, is a boolean that determines if the song title and artist name should be hidden on Discord Rich Presence.
 // For example, "My Cool Song Title" will become "??????????????????".
 RPC_HIDDEN=FALSE
 
+// FLASH_TRACK, is a boolean that determines if the chart is a flash track. It will use only 1 energy in arcade mode.
+// Currently, custom charts are not available in arcade mode.
+FLASH_TRACK=FALSE
+
 // STAGE_BACKGROUND, is a string that loads a scene within the game as its background.
-// Right now 'default' is accepted, which will fall back to 'Gameplay'. Be careful with this value.
+// Right now 'default' is accepted, which will fall back to the default background. Be careful with this value.
 // Leave this value blank if you don't know what you're doing!
 STAGE_BACKGROUND=default
 ```
@@ -163,6 +174,9 @@ STAGE_BACKGROUND=default
 // #FAKE
 // - Sets the amount of beats starting at this timing segment to convert all notes within the region into fake notes.
 // - Fake notes look identical and cannot be hit, and do not punish the player.
+// #EVENT
+// - Sends an event to the current stage.
+// - Each stage has its own set of events which can control elements, like background lighting.
 ```
 
 ### Example Chart File
