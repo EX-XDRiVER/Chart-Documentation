@@ -10,7 +10,7 @@ Here you'll find information on the file formats to create custom charts for EX-
 - Users should only create and distribute custom content with a music artist's and illustrator's work if users have permission from the music artists and illustrators.
   - **For remixes** of songs, users must **get permission from both the original music artists and the remixers**.
   - **For collaborations**, users must **get permission from all collaborators**.
-  - If any party declines the use of their work, users cannot use it.
+  - If any party declines the use of their work, users cannot use it. **Bootlegs should not be used for this reason.**
 
 - <ins>**Distributing custom content without proper permission in our Discord server may result in a ban.**</ins>
   - **These rules extend to distributing media (for example, screenshots or video) with said custom content.**
