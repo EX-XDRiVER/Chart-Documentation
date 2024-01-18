@@ -56,6 +56,7 @@ bool xdrv.HasMinimumClearTimeByNameAndDifficulty(string songName, int difficulty
 bool xdrv.HasMaximumClearTimeByNameAndDifficulty(string songName, int difficulty, float time);
 bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTime, float maxTime);
 bool xdrv.IsChartUnlockedByNameAndDifficulty(string songName, int difficulty);
+ - Use the above function with caution. Circular dependencies WILL crash the game at the moment.
 int  xdrv.GetBestMedalByNameAndDifficulty(string songName, int difficulty);
 int  xdrv.GetBestWingsByNameAndDifficulty(string songName, int difficulty);
 
