@@ -163,7 +163,7 @@ STAGE_BACKGROUND=default
 // #SCROLL
 // - Changes the scroll speed of the chart. Affects note positions. Accepts negative values.
 // #TIME_SIGNATURE
-// - Changes the current time signature. Only accepts an integer. (The 'Top Number' of the time signature)
+// - Changes the current time signature. For example, if your time signature is 4/4, you would use #TIME_SIGNATURE=4,4.
 // #COMBO_TICKS
 // - Sets how often you'll gain combo from holding down a hold or gear.
 // - A value of '1' will make it occur once per beat. '2' will occur twice per beat, and so on.
@@ -177,6 +177,7 @@ STAGE_BACKGROUND=default
 // #EVENT
 // - Sends an event to the current stage.
 // - Each stage has its own set of events which can control elements, like background lighting.
+// - For example, #EVENT=MyEventName,1.0,1,Variable3
 ```
 
 ### Example Chart File
