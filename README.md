@@ -6,7 +6,7 @@ Here you'll find information on the file formats to create custom charts for EX-
 - [Modfile Documentation / .lua](mods.md)
 - [Unlock Documentation / .lua](unlocks.md)
 
-## ⚠️ Custom Content Creation & Distribution Guidelines
+## ⚠️ Custom Content Creation & Distribution Rules
 - Creators should only create and distribute custom content with a music artist's and illustrator's work if creators have permission from the music artists and illustrators.
   - For remixes of songs, creators must get permission from both the original music artists and the remixers.
   - For collaborations, creators must get permission from all collaborators.
