@@ -8,7 +8,7 @@ Here you'll find information on the file formats to create custom charts for EX-
 
 ## ⚠️ Custom Content Creation & Distribution Rules
 - You should only create and distribute custom content with a music artist's and illustrator's work if you have permission from the music artists and illustrators.
-  - If an artist releases their music or illustration under a [Creative Commons](https://creativecommons.org/licenses/) license or belongs in the Public Domain, you may use it as long as the use of their work complies with their terms. Please verify this information before using their work. In addition, tell us where you found this information either on our [Discord server](https://discord.gg/JGb4VTGTmk), or via **[email](mailto:contact@xdrv.team)**.
+  - If an artist releases their music or illustration under a **[Creative Commons](https://creativecommons.org/licenses/)** license or belongs in the Public Domain, you may use it as long as the use of their work complies with their terms. Please verify this information before using their work. In addition, tell us where you found this information either on our **[Discord server](https://discord.gg/JGb4VTGTmk)**, or via **[email](mailto:contact@xdrv.team)**.
   - For remixes of songs, you must get permission from both the original music artists and the remixers.
   - For collaborations, you must get permission from all collaborators.
   - If any party declines the use of their work, you cannot use it. Bootlegs should not be used for this reason.
@@ -32,7 +32,7 @@ Don't include anything that invades another person's privacy in any way with you
 - No personal information, such as name, age, address, identification, documents, etc.
 
 ### Sensitive Content
-Please put content warnings on your content as appropriate. This can also be done with tags in the [Discord server](https://discord.gg/JGb4VTGTmk) forums.
+Please put content warnings on your content as appropriate. This can also be done with tags in the **[Discord server](https://discord.gg/JGb4VTGTmk)** forums.
 - Some examples of sensitive content include (but are not limited to):
   - Visual effects which may provoke photosensitive seizures (flashing lights, etc.)
   - Audio which may cause hearing loss (loud audio, high audio pressure, etc.)
