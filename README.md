@@ -29,7 +29,7 @@ Don't include anything inappropriate with your custom content.
 
 ### Privacy
 Don't include anything that invades another person's privacy in any way with your custom content.
-- No personal information, such as name, age, address, identification, documents, images of people's faces, etc.
+- No personal information, such as name, age, address, identification, documents, etc.
 
 ### Sensitive Content
 Please put content warnings on your content as appropriate. This can also be done with tags in the [Discord server](https://discord.gg/JGb4VTGTmk) forums.
