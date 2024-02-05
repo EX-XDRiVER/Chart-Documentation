@@ -24,7 +24,7 @@ Here you'll find information on the file formats to create custom charts for EX-
 ### Inappropriate Content
 Don't include anything inappropriate with your custom content.
 - No harassment, harmful, sexually explicit, abusive, or obscene content.
-- No malware, viruses, exploits, or security vulnerabilities.
+- No malware, viruses, or content that abuses exploits, or exploits security vulnerabilities.
 - No promotion of violence, threats, or attacks on other people based on race, sexual orientation, gender, etc.
 
 ### Privacy
