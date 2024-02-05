@@ -41,10 +41,10 @@ Please put content warnings on your custom content as appropriate. This can also
 
 ### Reciprocity and Monetization
 - You may not create custom content for monetary purposes. (chart commissions, paywalling content, etc.)
-- You may not use or distribute custom content for any cryptocurrency or NFT related purposes or activity.
+- Any cryptocurrency or NFT related activity is not allowed.
 
 ### AI Generated Content
-- You may not use AI generated content in your custom content.
+- You may not include AI generated content in your custom content.
 
 ### Disclaimers
 - We cannot regulate custom content outside of our Discord server, and we ask that creators follow these guidelines.
