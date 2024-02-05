@@ -32,7 +32,7 @@ Don't include anything that invades another person's privacy in any way with you
 - No personal information, such as name, age, address, identification, documents, etc.
 
 ### Sensitive Content
-Please put content warnings on your content as appropriate. This can also be done with tags in the **[Discord server](https://discord.gg/JGb4VTGTmk)** forums.
+Please put content warnings on your custom content as appropriate. This can also be done with tags in the **[Discord server](https://discord.gg/JGb4VTGTmk)** forums.
 - Some examples of sensitive content include (but are not limited to):
   - Visual effects which may provoke photosensitive seizures (flashing lights, etc.)
   - Audio which may cause hearing loss (loud audio, high audio pressure, etc.)
