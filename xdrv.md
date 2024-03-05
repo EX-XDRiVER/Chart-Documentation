@@ -80,8 +80,7 @@ RPC_HIDDEN=FALSE
 FLASH_TRACK=FALSE
 
 // STAGE_BACKGROUND, is a string that loads a scene within the game as its background.
-// Right now 'default' is accepted, which will fall back to the default background. Be careful with this value.
-// Leave this value blank if you don't know what you're doing!
+// Right now 'default' is accepted, which will fall back to the default background.
 STAGE_BACKGROUND=default
 ```
 
