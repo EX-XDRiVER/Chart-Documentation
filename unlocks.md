@@ -99,7 +99,7 @@ bool xdrv.HasMaximumClearTimeByNameAndDifficulty(string songName, int difficulty
 - If the player has an EX score between or equal to the specified EX scores on a specified song name and difficulty, this returns true.
 bool xdrv.HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTime, float maxTime);
 
-- Use this function with caution. Circular dependencies WILL crash the game at the moment.
+- Checks if the specified song and difficulty is unlocked. Circular dependencies / excessive chains of this function will give an error and return false.
 bool xdrv.IsChartUnlockedByNameAndDifficulty(string songName, int difficulty);
 
 - Gets the best medal the player has on a specified song name and difficulty as a numerical representation.
