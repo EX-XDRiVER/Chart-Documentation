@@ -64,22 +64,33 @@ CHART_DISPLAY_BPM=120
 // CHART_BPM, is a float, and the real starting BPM of the song.
 CHART_BPM=120
 
+
+// FLASH_TRACK, is a boolean that determines if the chart is a flash track. It will use only 1 energy in arcade mode.
+// Currently, custom charts are not available in arcade mode.
+// Setting this to TRUE will add an icon to the chart in song select.
+FLASH_TRACK=FALSE
+
+// KEYBOARD_ONLY, is a boolean that determines if the chart is designed without controllers in mind.
+// Setting this to TRUE will add an icon to the chart in song select.
+KEYBOARD_ONLY=FALSE
+
+// ORIGINAL, is a boolean that determines if the chart uses original music from EX-XDRiVER.
+// Setting this to TRUE will add an icon to the chart in song select.
+ORIGINAL=FALSE
+
+
 // MODFILE_PATH, is a file path to the modfile .lua. More documentation about modfiles in mods.md.
 MODFILE_PATH=EXTREME_MODS.lua
-
-// DISABLE_LEADERBOARD_UPLOADING, is a boolean that disables leaderboards if enabled. This is used for songs like Metronome.
-// Currently, custom charts don't have leaderboards, so this is unused.
-DISABLE_LEADERBOARD_UPLOADING=FALSE
 
 // RPC_HIDDEN, is a boolean that determines if the song title and artist name should be hidden on Discord Rich Presence.
 // For example, "My Cool Song Title" will become "??????????????????".
 RPC_HIDDEN=FALSE
 
-// FLASH_TRACK, is a boolean that determines if the chart is a flash track. It will use only 1 energy in arcade mode.
-// Currently, custom charts are not available in arcade mode.
-FLASH_TRACK=FALSE
+// DISABLE_LEADERBOARD_UPLOADING, is a boolean that disables leaderboards if enabled. This is used for songs like Metronome.
+// Currently, custom charts don't have leaderboards, so this is unused.
+DISABLE_LEADERBOARD_UPLOADING=FALSE
 
-// STAGE_BACKGROUND, is a string that loads a scene within the game as its background.
+// STAGE_BACKGROUND, is a string that loads a stage within the game as its background.
 // Right now 'default' is accepted, which will fall back to the default background.
 STAGE_BACKGROUND=default
 ```
@@ -175,7 +186,7 @@ STAGE_BACKGROUND=default
 // - Fake notes look identical and cannot be hit, and do not punish the player.
 // #EVENT
 // - Sends an event to the current stage.
-// - Each stage has its own set of events which can control elements, like background lighting.
+// - Each stage has its own set of events which can control different stage elements, like background lighting.
 // - For example, #EVENT=MyEventName,1.0,1,Variable3
 ```
 
