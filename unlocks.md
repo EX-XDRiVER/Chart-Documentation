@@ -122,6 +122,18 @@ long xdrv.GetCurrentTimestamp();
 - Gets the current player's beaten staff ghost count. Optionally provide a boolean to only count staff ghosts beaten with autodrift off.
 int  xdrv.GetBeatenStaffGhostCount(bool autodriftOffOnly)
 
+- Gets the amount of charts in a folder, on a specific difficulty.
+int  xdrv.GetChartCountInGroupAndDifficulty(string group)
+
+- Gets the amount of charts in a folder.
+int  xdrv.GetChartCountInGroup(string group)
+
+- Gets the amount of cleared charts in a folder, on a specific difficulty.
+int  xdrv.GetClearedChartCountInGroupAndDifficulty(string group, int difficulty)
+
+- Gets the amount of cleared charts in a folder.
+int  xdrv.GetClearedChartCountInGroup(string group)
+
 ]]--
 
 -- To set the text for an unlock condition:
