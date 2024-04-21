@@ -188,6 +188,12 @@ STAGE_BACKGROUND=default
 // - Sends an event to the current stage.
 // - Each stage has its own set of events which can control different stage elements, like background lighting.
 // - For example, #EVENT=MyEventName,1.0,1,Variable3
+// #CHECKPOINT
+// - Currently unused, but will be added at a later date after release.
+// - Used to split a chart into sections.
+// - Each section has its own EX requirement and will start the timer when reached, and stop the timer when the EX requirement is completed.
+// - The total time of the play will be every section combined.
+// - Checkpoint times are saved in the play data, and will be used to compare 'splits' during gameplay to show your current pace.
 ```
 
 ### Example Chart File
