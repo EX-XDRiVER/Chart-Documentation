@@ -194,6 +194,8 @@ STAGE_BACKGROUND=default
 // - Each section has its own EX requirement and will start the timer when reached, and stop the timer when the EX requirement is completed.
 // - The total time of the play will be every section combined.
 // - Checkpoint times are saved in the play data, and will be used to compare 'splits' during gameplay to show your current pace.
+// - Each checkpoint has a name, defined by the chart tag. For example: '#CHECKPOINT=My Checkpoint Name'
+// - In each chart, a checkpoint is generated at row 0 with the name 'Start Line'. The name of this checkpoint can be changed by manually defining the checkpoint at row 0.
 ```
 
 ### Example Chart File
