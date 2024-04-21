@@ -75,8 +75,14 @@ bool xdrv.HasClearedChartByNameAndDifficulty(string songName, int difficulty);
 - If the player has a score above or equal to the specified score on the specified song and difficulty, this returns true.
 bool xdrv.HasMinimumScoreByNameAndDifficulty(string songName, int difficulty, int score);
 
+- If the player has a score above or equal to the specified score on the specified song on ANY difficulty, this returns true.
+bool xdrv.HasMinimumScoreByName(string songName, int score);
+
 - If the player has a score below or equal to the specified score on the specified song and difficulty, this returns true.
 bool xdrv.HasMaximumScoreByNameAndDifficulty(string songName, int difficulty, int score);
+
+- If the player has a score below or equal to the specified score on the specified song on ANY difficulty, this returns true.
+bool xdrv.HasMaximumScoreByName(string songName, int score);
 
 - If the player has a score between or equal to the specified minimum and maximum scores on the specified song and difficulty, this returns true.
 bool xdrv.HasScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore);
