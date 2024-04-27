@@ -38,17 +38,17 @@
 -- "speed"
 -- - Changes the scroll speed multiplier independent of actual scroll speed.
 -- 
--- "camera_position_x"
+-- "camera_position_x" ("camera_move_x")
 -- - Move the camera along the X axis.
--- "camera_position_y"       
+-- "camera_position_y" ("camera_move_y")
 -- - Move the camera along the Y axis.
--- "camera_position_z"       
+-- "camera_position_z" ("camera_move_z")       
 -- - Move the camera along the Z axis.
--- "camera_rotation_x"       
+-- "camera_rotation_x" ("camera_rotate_x")       
 -- - Rotate the camera around the X axis.
--- "camera_rotation_y"       
+-- "camera_rotation_y" ("camera_rotate_y")       
 -- - Rotate the camera around the Y axis.
--- "camera_rotation_z"       
+-- "camera_rotation_z" ("camera_rotate_z")       
 -- - Rotate the camera around the Z axis.
 -- 
 -- "note_move_x"   
@@ -239,13 +239,70 @@
 -- - Rotate the right black bar in degrees from 0-360.
 -- 
 -- "lane_color_red"   
--- - Change the track's red color channel.
+-- - Change the track's red color channel. Default value is set to 0.075.
 -- "lane_color_green"   
--- - Change the track's green color channel.
+-- - Change the track's green color channel. Default value is set to 0.075.
 -- "lane_color_blue"   
--- - Change the track's blue color channel.
+-- - Change the track's blue color channel. Default value is set to 0.075.
 -- "lane_color_alpha"   
--- - Change the track's alpha color channel.
+-- - Change the track's alpha color channel. Default value is set to 1.
+--
+-- "lane_left_color_red"
+-- - Change the left track's red color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_left_color_green"
+-- - Change the left track's green color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_left_color_blue"
+-- - Change the left track's blue color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_left_color_alpha"
+-- - Change the left track's alpha color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+--
+-- "lane_right_color_red"
+-- - Change the right track's red color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_right_color_green"
+-- - Change the right track's green color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_right_color_blue"
+-- - Change the right track's blue color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+-- "lane_right_color_alpha"
+-- - Change the right track's alpha color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
+--
+-- "drift_move_x"   
+-- - Move drift notes along the X axis.
+-- "drift_move_y"   
+-- - Move drift notes along the Y axis.
+-- "drift_move_z"   
+-- - Move drift notes along the Z axis.
+-- "drift_rotate_x"       
+-- - Rotate drift notes around the X axis.
+-- "drift_rotate_y"       
+-- - Rotate drift notes around the Y axis.
+-- "drift_rotate_z"       
+-- - Rotate drift notes around the Z axis.
+-- 
+-- "driftleft_move_x"   
+-- - Move drift notes on the left track along the X axis.
+-- "driftleft_move_y"   
+-- - Move drift notes on the left track along the Y axis.
+-- "driftleft_move_z"   
+-- - Move drift notes on the left track along the Z axis.
+-- "driftleft_rotate_x"       
+-- - Rotate drift notes on the left track around the X axis.
+-- "driftleft_rotate_y"       
+-- - Rotate drift notes on the left track around the Y axis.
+-- "driftleft_rotate_z"       
+-- - Rotate drift notes on the left track around the Z axis.
+-- 
+-- "driftright_move_x"       
+-- - Move drift notes on the right track along the X axis.
+-- "driftright_move_y"       
+-- - Move drift notes on the right track along the Y axis.
+-- "driftright_move_z"       
+-- - Move drift notes on the right track along the Z axis.
+-- "driftright_rotate_x"       
+-- - Rotate drift notes on the right track around the X axis.
+-- "driftright_rotate_y"       
+-- - Rotate drift notes on the right track around the Y axis.
+-- "driftright_rotate_z"       
+-- - Rotate drift notes on the right track around the Z axis.
 --
 -- A list of all ease types are as follows:
 --
