@@ -51,6 +51,9 @@
 -- "camera_rotation_z" ("camera_rotate_z")       
 -- - Rotate the camera around the Z axis.
 -- 
+-- "camera_fov" ("camera_field_of_view")
+-- - Change the camera's field of view. Default: 100, Minimum: 1, Maximum: 179
+--
 -- "note_move_x"   
 -- - Move all notes along the X axis.
 -- "note_move_y"   
@@ -63,6 +66,12 @@
 -- - Rotate the notes around the Y axis.
 -- "note_rotate_z"       
 -- - Rotate the notes around the Z axis.
+-- "note_scale_x"       
+-- - Changes the scale of the notes along the X axis.
+-- "note_scale_y"       
+-- - Changes the scale of the notes along the Y axis.
+-- "note_scale_z"       
+-- - Changes the scale of the notes along the Z axis.
 -- 
 -- "note1_move_x"       
 -- - Move notes in column 1 along the X axis.
@@ -76,6 +85,12 @@
 -- - Rotate notes in column 1 around the X axis.
 -- "note1_rotate_z"       
 -- - Rotate notes in column 1 around the X axis.
+-- "note1_scale_x"       
+-- - Changes the scale of the notes in column 1 along the X axis.
+-- "note1_scale_y"       
+-- - Changes the scale of the notes in column 1 along the Y axis.
+-- "note1_scale_z"       
+-- - Changes the scale of the notes in column 1 along the Z axis.
 -- 
 -- "note2_move_x"       
 -- - Move notes in column 2 along the X axis.
@@ -89,6 +104,12 @@
 -- - Rotate notes in column 2 around the X axis.
 -- "note2_rotate_z"       
 -- - Rotate notes in column 2 around the X axis.
+-- "note2_scale_x"       
+-- - Changes the scale of the notes in column 2 along the X axis.
+-- "note2_scale_y"       
+-- - Changes the scale of the notes in column 2 along the Y axis.
+-- "note2_scale_z"       
+-- - Changes the scale of the notes in column 2 along the Z axis.
 -- 
 -- "note3_move_x"       
 -- - Move notes in column 3 along the X axis.
@@ -102,6 +123,12 @@
 -- - Rotate notes in column 3 around the X axis.
 -- "note3_rotate_z"       
 -- - Rotate notes in column 3 around the X axis.
+-- "note3_scale_x"       
+-- - Changes the scale of the notes in column 3 along the X axis.
+-- "note3_scale_y"       
+-- - Changes the scale of the notes in column 3 along the Y axis.
+-- "note3_scale_z"       
+-- - Changes the scale of the notes in column 3 along the Z axis.
 -- 
 -- "note4_move_x"       
 -- - Move notes in column 4 along the X axis.
@@ -115,6 +142,12 @@
 -- - Rotate notes in column 4 around the X axis.
 -- "note4_rotate_z"       
 -- - Rotate notes in column 4 around the X axis.
+-- "note4_scale_x"       
+-- - Changes the scale of the notes in column 4 along the X axis.
+-- "note4_scale_y"       
+-- - Changes the scale of the notes in column 4 along the Y axis.
+-- "note4_scale_z"       
+-- - Changes the scale of the notes in column 4 along the Z axis.
 -- 
 -- "note5_move_x"       
 -- - Move notes in column 5 along the X axis.
@@ -128,6 +161,12 @@
 -- - Rotate notes in column 5 around the X axis.
 -- "note5_rotate_z"       
 -- - Rotate notes in column 5 around the X axis.
+-- "note5_scale_x"       
+-- - Changes the scale of the notes in column 5 along the X axis.
+-- "note5_scale_y"       
+-- - Changes the scale of the notes in column 5 along the Y axis.
+-- "note5_scale_z"       
+-- - Changes the scale of the notes in column 5 along the Z axis.
 -- 
 -- "note6_move_x"       
 -- - Move notes in column 6 along the X axis.
@@ -141,7 +180,127 @@
 -- - Rotate notes in column 6 around the X axis.
 -- "note6_rotate_z"       
 -- - Rotate notes in column 6 around the X axis.
+-- "note6_scale_x"       
+-- - Changes the scale of the notes in column 6 along the X axis.
+-- "note6_scale_y"       
+-- - Changes the scale of the notes in column 6 along the Y axis.
+-- "note6_scale_z"       
+-- - Changes the scale of the notes in column 6 along the Z axis.
+--
+-- "gear_move_x"   
+-- - Move both gears along the X axis.
+-- "gear_move_y"   
+-- - Move both gears along the Y axis.
+-- "gear_move_z"   
+-- - Move both gears along the Z axis.
+-- "gear_rotate_x"       
+-- - Rotate both gears around the X axis.
+-- "gear_rotate_y"       
+-- - Rotate both gears around the Y axis.
+-- "gear_rotate_z"       
+-- - Rotate both gears around the Z axis.
+-- "gear_scale_x"       
+-- - Changes the scale of the gears along the X axis.
+-- "gear_scale_y"       
+-- - Changes the scale of the gears along the Y axis.
+-- "gear_scale_z"       
+-- - Changes the scale of the gears along the Z axis.
 -- 
+-- "gearleft_move_x"   
+-- - Move the left gear along the X axis.
+-- "gearleft_move_y"   
+-- - Move the left gear along the Y axis.
+-- "gearleft_move_z"   
+-- - Move the left gear along the Z axis.
+-- "gearleft_rotate_x"       
+-- - Rotate the left gear around the X axis.
+-- "gearleft_rotate_y"       
+-- - Rotate the left gear around the Y axis.
+-- "gearleft_rotate_z"       
+-- - Rotate the left gear around the Z axis.
+-- "gearleft_scale_x"       
+-- - Changes the scale of the gears on the left track along the X axis.
+-- "gearleft_scale_y"       
+-- - Changes the scale of the gears on the left track along the Y axis.
+-- "gearleft_scale_z"       
+-- - Changes the scale of the gears on the left track along the Z axis.
+-- 
+-- "gearright_move_x"       
+-- - Move the right gear along the X axis.
+-- "gearright_move_y"       
+-- - Move the right gear along the Y axis.
+-- "gearright_move_z"       
+-- - Move the right gear along the Z axis.
+-- "gearright_rotate_x"       
+-- - Rotate the right gear around the X axis.
+-- "gearright_rotate_y"       
+-- - Rotate the right gear around the Y axis.
+-- "gearright_rotate_z"       
+-- - Rotate the right gear around the Z axis.
+-- "gearright_scale_x"       
+-- - Changes the scale of the gears on the right track along the X axis.
+-- "gearright_scale_y"       
+-- - Changes the scale of the gears on the right track along the Y axis.
+-- "gearright_scale_z"       
+-- - Changes the scale of the gears on the right track along the Z axis.
+--
+-- "drift_move_x"   
+-- - Move drift notes along the X axis.
+-- "drift_move_y"   
+-- - Move drift notes along the Y axis.
+-- "drift_move_z"   
+-- - Move drift notes along the Z axis.
+-- "drift_rotate_x"       
+-- - Rotate drift notes around the X axis.
+-- "drift_rotate_y"       
+-- - Rotate drift notes around the Y axis.
+-- "drift_rotate_z"       
+-- - Rotate drift notes around the Z axis.
+-- "drift_scale_x"       
+-- - Changes the scale of the drift notes along the X axis.
+-- "drift_scale_y"       
+-- - Changes the scale of the drift notes along the Y axis.
+-- "drift_scale_z"       
+-- - Changes the scale of the drift notes along the Z axis.
+-- 
+-- "driftleft_move_x"   
+-- - Move drift notes on the left track along the X axis.
+-- "driftleft_move_y"   
+-- - Move drift notes on the left track along the Y axis.
+-- "driftleft_move_z"   
+-- - Move drift notes on the left track along the Z axis.
+-- "driftleft_rotate_x"       
+-- - Rotate drift notes on the left track around the X axis.
+-- "driftleft_rotate_y"       
+-- - Rotate drift notes on the left track around the Y axis.
+-- "driftleft_rotate_z"       
+-- - Rotate drift notes on the left track around the Z axis.
+-- "driftleft_scale_x"       
+-- - Changes the scale of the drift notes on the left track along the X axis.
+-- "driftleft_scale_y"       
+-- - Changes the scale of the drift notes on the left track along the Y axis.
+-- "driftleft_scale_z"       
+-- - Changes the scale of the drift notes on the left track along the Z axis.
+-- 
+-- "driftright_move_x"       
+-- - Move drift notes on the right track along the X axis.
+-- "driftright_move_y"       
+-- - Move drift notes on the right track along the Y axis.
+-- "driftright_move_z"       
+-- - Move drift notes on the right track along the Z axis.
+-- "driftright_rotate_x"       
+-- - Rotate drift notes on the right track around the X axis.
+-- "driftright_rotate_y"       
+-- - Rotate drift notes on the right track around the Y axis.
+-- "driftright_rotate_z"       
+-- - Rotate drift notes on the right track around the Z axis.
+-- "driftright_scale_x"       
+-- - Changes the scale of the drift notes on the right track along the X axis.
+-- "driftright_scale_y"       
+-- - Changes the scale of the drift notes on the right track along the Y axis.
+-- "driftright_scale_z"       
+-- - Changes the scale of the drift notes on the right track along the Z axis.
+--
 -- "track_move_x"       
 -- - Move both tracks along the X axis.
 -- "track_move_y"       
@@ -181,45 +340,6 @@
 -- "trackright_rotate_z"       
 -- - Rotate the right track around the Z axis.
 -- 
--- "gear_move_x"   
--- - Move both gears along the X axis.
--- "gear_move_y"   
--- - Move both gears along the Y axis.
--- "gear_move_z"   
--- - Move both gears along the Z axis.
--- "gear_rotate_x"       
--- - Rotate both gears around the X axis.
--- "gear_rotate_y"       
--- - Rotate both gears around the Y axis.
--- "gear_rotate_z"       
--- - Rotate both gears around the Z axis.
--- 
--- "gearleft_move_x"   
--- - Move the left gear along the X axis.
--- "gearleft_move_y"   
--- - Move the left gear along the Y axis.
--- "gearleft_move_z"   
--- - Move the left gear along the Z axis.
--- "gearleft_rotate_x"       
--- - Rotate the left gear around the X axis.
--- "gearleft_rotate_y"       
--- - Rotate the left gear around the Y axis.
--- "gearleft_rotate_z"       
--- - Rotate the left gear around the Z axis.
--- 
--- "gearright_move_x"       
--- - Move the right gear along the X axis.
--- "gearright_move_y"       
--- - Move the right gear along the Y axis.
--- "gearright_move_z"       
--- - Move the right gear along the Z axis.
--- "gearright_rotate_x"       
--- - Rotate the right gear around the X axis.
--- "gearright_rotate_y"       
--- - Rotate the right gear around the Y axis.
--- "gearright_rotate_z"       
--- - Rotate the right gear around the Z axis.
--- 
 -- "black_bar_top_position"   
 -- - Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
 -- "black_bar_bottom_position"    
@@ -238,71 +358,32 @@
 -- "black_bar_right_rotation"   
 -- - Rotate the right black bar in degrees from 0-360.
 -- 
--- "lane_color_red"   
+-- "lane_color_red" ("track_color_red")
 -- - Change the track's red color channel. Default value is set to 0.075.
--- "lane_color_green"   
+-- "lane_color_green" ("track_color_green")
 -- - Change the track's green color channel. Default value is set to 0.075.
--- "lane_color_blue"   
+-- "lane_color_blue" ("track_color_blue")
 -- - Change the track's blue color channel. Default value is set to 0.075.
--- "lane_color_alpha"   
+-- "lane_color_alpha" ("track_color_alpha")
 -- - Change the track's alpha color channel. Default value is set to 1.
 --
--- "lane_left_color_red"
+-- "lane_left_color_red" ("track_left_color_red")
 -- - Change the left track's red color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_left_color_green"
+-- "lane_left_color_green" ("track_left_color_green")
 -- - Change the left track's green color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_left_color_blue"
+-- "lane_left_color_blue" ("track_left_color_blue")
 -- - Change the left track's blue color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_left_color_alpha"
+-- "lane_left_color_alpha" ("track_left_color_alpha")
 -- - Change the left track's alpha color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
 --
--- "lane_right_color_red"
+-- "lane_right_color_red" ("track_right_color_red")
 -- - Change the right track's red color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_right_color_green"
+-- "lane_right_color_green" ("track_right_color_green")
 -- - Change the right track's green color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_right_color_blue"
+-- "lane_right_color_blue" ("track_right_color_blue")
 -- - Change the right track's blue color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
--- "lane_right_color_alpha"
+-- "lane_right_color_alpha" ("track_right_color_alpha")
 -- - Change the right track's alpha color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
---
--- "drift_move_x"   
--- - Move drift notes along the X axis.
--- "drift_move_y"   
--- - Move drift notes along the Y axis.
--- "drift_move_z"   
--- - Move drift notes along the Z axis.
--- "drift_rotate_x"       
--- - Rotate drift notes around the X axis.
--- "drift_rotate_y"       
--- - Rotate drift notes around the Y axis.
--- "drift_rotate_z"       
--- - Rotate drift notes around the Z axis.
--- 
--- "driftleft_move_x"   
--- - Move drift notes on the left track along the X axis.
--- "driftleft_move_y"   
--- - Move drift notes on the left track along the Y axis.
--- "driftleft_move_z"   
--- - Move drift notes on the left track along the Z axis.
--- "driftleft_rotate_x"       
--- - Rotate drift notes on the left track around the X axis.
--- "driftleft_rotate_y"       
--- - Rotate drift notes on the left track around the Y axis.
--- "driftleft_rotate_z"       
--- - Rotate drift notes on the left track around the Z axis.
--- 
--- "driftright_move_x"       
--- - Move drift notes on the right track along the X axis.
--- "driftright_move_y"       
--- - Move drift notes on the right track along the Y axis.
--- "driftright_move_z"       
--- - Move drift notes on the right track along the Z axis.
--- "driftright_rotate_x"       
--- - Rotate drift notes on the right track around the X axis.
--- "driftright_rotate_y"       
--- - Rotate drift notes on the right track around the Y axis.
--- "driftright_rotate_z"       
--- - Rotate drift notes on the right track around the Z axis.
 --
 -- A list of all ease types are as follows:
 --
