@@ -91,7 +91,8 @@ RPC_HIDDEN=FALSE
 DISABLE_LEADERBOARD_UPLOADING=FALSE
 
 // STAGE_BACKGROUND, is a string that loads a stage within the game as its background.
-// Right now 'default' is accepted, which will fall back to the default background.
+// 'default' will fall back to the Tunnel background.
+// Alternatively, you can use 'BackgroundTunnel', and 'BackgroundCity' for this field.
 STAGE_BACKGROUND=default
 ```
 
@@ -189,10 +190,7 @@ STAGE_BACKGROUND=default
 // - Each stage has its own set of events which can control different stage elements, like background lighting.
 // - For example, #EVENT=MyEventName,1.0,1,Variable3
 // #CHECKPOINT
-// - Currently unused, but will be added at a later date after release.
 // - Used to split a chart into sections.
-// - Each section has its own EX requirement and will start the timer when reached, and stop the timer when the EX requirement is completed.
-// - The total time of the play will be every section combined.
 // - Checkpoint times are saved in the play data, and will be used to compare 'splits' during gameplay to show your current pace.
 // - Each checkpoint has a name, defined by the chart tag. For example: '#CHECKPOINT=My Checkpoint Name'
 // - In each chart, a checkpoint is generated at row 0 with the name 'Start Line'. The name of this checkpoint can be changed by manually defining the checkpoint at row 0.
