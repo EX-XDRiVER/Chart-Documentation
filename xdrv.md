@@ -13,8 +13,16 @@ MUSIC_TITLE=Song Title
 // However, any methods that attempt to get the song (via unlocks or other cache related code) will still refer to MUSIC_TITLE.
 ALTERNATE_TITLE=Chart Specific Song Title
 
+// SUBTITLE, is used whenever a song has a cut version of the original. For instance, we use "(XDRV Cut)" to distinguish short versions from the original song.
+// You can put any string of text in this field. Using this with the 'CHART_CREDIT' field will make it alternate between the two.
+SUBTITLE=Subtitle
+
 // MUSIC_ARTIST, is the song's artist or musician name.
 MUSIC_ARTIST=Song Artist
+
+// MUSIC_CREDIT, is used whenever a song belongs to another game or album, and you want to reference it.
+// You can put any string of text in this field. Using this with the 'SUBTITLE' field will make it alternate between the two.
+MUSIC_CREDIT=From "Game"
 
 // MUSIC_AUDIO, is the file path to the audio file.
 MUSIC_AUDIO=audio.ogg
