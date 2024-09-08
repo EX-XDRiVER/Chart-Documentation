@@ -1,4 +1,8 @@
-## Modfile Documentation (.lua)
+# Modfile Documentation (.lua)
+
+## Mods
+<details>
+<summary>Mods Documentation and Getting Started</summary>
 
 Mods for a chart are stored in a .lua file! This file is executed at gameplay.
 There are two kinds of mod initialization calls, "Mod" and "Ease".
@@ -38,8 +42,10 @@ The final method call will look like this:
 <br>
 
 Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, for a length of 8 beats with the linear ease type.
+</details>
 
-A list of all the mods in the game are as follows:
+<details>
+<summary>List of All Mods</summary>
 
 "speed" (Column specific variants: "speedX" where X is 1-9, Aliases: "noteX_speed" where X is 1-9, "gearleft_speed", "gearright_speed", "drift_speed")
 - Changes the scroll speed multiplier independent of actual scroll speed.
@@ -179,6 +185,9 @@ A list of all the mods in the game are as follows:
 "track_scale_z" (Track specific variants: "trackleft_scale_z" and "trackright_scale_z")
 - Changes the scale of the tracks along the Z axis.
 
+"judgment_line_offset" (Track specific variants: "judgment_line_left_offset" and "judgment_line_right_offset")
+- Moves the judgment line up or down the track.
+
 "black_bar_top_position"   
 - Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
 
@@ -245,7 +254,22 @@ A list of all the mods in the game are as follows:
 "lane_right_color_alpha" (Alias: "track_right_color_alpha")
 - Change the right track's alpha color channel. This is added on top of the color mods for both tracks. Default value is set to 0.
 
-A list of all ease types are as follows:
+"note_opacity" (Column specific variant: "noteX_opacity" where X is 1-6)
+- Change the opacity of notes. Value ranges from 0 to 1.
+
+"gear_opacity" (Track specific variants: "gearleft_opacity" and "gearright_opacity")
+- Change the opacity of gears. Value ranges from 0 to 1.
+
+"drift_opacity" (Track specific variants: "driftleft_opacity" and "driftright_opacity")
+- Change the opacity of drift notes. Value ranges from 0 to 1.
+
+"note_opacityX" (Where X is 1-9)
+- A column specific variant of "note_opacity" for all notes including gears and drifts. Column 9 does not affect left/right drifts independently, but all drift notes.
+
+</details>
+
+<details>
+<summary>List of All Ease Types</summary>
 
 * Linear
 * InQuad
@@ -290,3 +314,51 @@ A list of all ease types are as follows:
 * SmoothStep
 * SmootherStep
 * SmoothestStep
+
+</details>
+
+## Other Functions
+
+### Events in Lua
+
+<details>
+<summary>Lua Events Documentation</summary>
+
+As of 1.2.0, you can call [Events](https://github.com/EX-XDRiVER/Chart-Documentation/tree/main/backgrounds) from lua files.
+
+The syntax for RunEvent is `xdrv.RunEvent(string eventName, string beatOrTime, float timingValue, params object[] eventValues)`.
+
+Example: `xdrv.RunEvent("SetUIAlphaCurrentSongGroup", "beat", 0, 1, 10);`
+
+This will run the event for setting the alpha for the UI for song metadata and score information's at beat 0, to 1 over the course of 10 beats.
+
+All events, and arguments (including optional ones) are supported.
+
+Additionally, you can call this function with snake_case. Example: `xdrv.run_event`
+</details>
+
+### Player Options (Note Color)
+
+<details>
+<summary>Note Color Functions Documentation</summary>
+
+As of 1.2.0, you can get the player's note color from a desired column.
+
+`xdrv.GetPlayerNoteColor(int column)` will return a float array containing 4 floats, with red, green, blue, and alpha channels. The values are all ranging from 0 to 1. The provided column index needs to be from 0 to 7.
+
+Additionally, you can get a specific color channel using `xdrv.GetPlayerNoteColorChannel(int column, int index)`, where index needs to be from 0 to 3.
+
+You can also use `xdrv.GetPlayerNoteColorRed(int column)`, `xdrv.GetPlayerNoteColorGreen(int column)`, `xdrv.GetPlayerNoteColorBlue(int column)`, and `xdrv.GetPlayerNoteColorAlpha(int column)`.
+
+Additionally, you can call these functions with snake_case. Example: `xdrv.get_player_note_color`
+</details>
+
+### Player Options (Scroll Speed)
+
+<details>
+<summary>Scroll Speed Functions Documentation</summary>
+
+You can get a player's scroll speed using `xdrv.GetPlayerScrollSpeed()`. This will return the raw float value that the player has in options. This value has a minimum of 0.5 with no maximum.
+
+Additionally, you can call this function with snake_case. Example: `xdrv.get_player_scroll_speed`
+</details>
