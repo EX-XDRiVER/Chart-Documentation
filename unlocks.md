@@ -39,6 +39,9 @@ All of these functions will execute relating to the chart you are making this un
 `GetBestWings()`
 - This will get the player's best wings on the chart.
 
+`GetSongGroup()`
+- Gets the current 'group', or folder name that this chart is located in.
+
 `HasMinimumScore(int score)`
 - Compare the player's scores on this chart to the specified score. If the player has a score above or equal to the specified score, this returns true.
 
@@ -217,6 +220,16 @@ These functions apply to the chart this unlock file is for, and only apply to th
 
 `HasEXOnLevel(int difficulty)`
 - Returns true if the player has an EX grade on any chart on the specified difficulty, only works on charts in the base game.
+
+## Redirects
+
+`RedirectChart(bool redirect, bool hideStats, string lookup, int difficulty)`
+- Redirects this chart to another chart based on the lookup string and difficulty.
+  - Does NOT display the play data of the redirected chart on this chart.
+  - Providing 'true' for the 'hideStats' bool will scramble the best score, EX, and time on the UI.
+
+`BlockRedirects(bool block)
+- Prevents any chart from redirecting to this one.
 
 ## Example
 

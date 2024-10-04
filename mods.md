@@ -188,6 +188,9 @@ Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, 
 "judgment_line_offset" (Track specific variants: "judgment_line_left_offset" and "judgment_line_right_offset")
 - Moves the judgment line up or down the track.
 
+"render_line_offset" (Track specific variants: "render_line_left_offset and "render_line_right_offset")
+- Moves the 'render line' up or down the track. Notes will not render past this line.
+
 "black_bar_top_position"   
 - Move the top black bar down onto the screen. A value of 1 will completely cover the screen.
 

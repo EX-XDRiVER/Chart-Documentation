@@ -41,8 +41,11 @@ Chart Metadata starts at the top of the .xdrv file.
 `JACKET_ILLUSTRATOR`, is the name(s) or username(s) of the person who made the album art / jacket for the chart.
 > `JACKET_ILLUSTRATOR=My Jacket Illustrator`
 
-`CHART_AUTHOR`, is the name(s) or username(s) of the person who made this chart.
+`CHART_AUTHOR`, is the name or username of the person who made this chart.
 > `CHART_AUTHOR=Me`
+
+`CHART_AUTHORS`, are the names or usernames of the people who made this chart, separated by comma. This will cycle through all of the names on this list.
+> `CHART_AUTHORS=Name 1, Name 2, Name 3`
 
 `CHART_TAGS`, is an array of 4 floats, currently unused by the game.
 > `CHART_TAGS=0,0,0,0`
