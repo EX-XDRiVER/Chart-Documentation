@@ -1,0 +1,90 @@
+## Events for Background: BackgroundVivid
+
+.xdrv Metadata: `STAGE_BACKGROUND=BackgroundVivid`
+
+The format of events is as follows: `#EVENT=EventName,Argument1,Argument2` etc..
+
+- EnableBloomBeat (arg 1 (optional): start now)
+  - Enables bloom on every whole beat, optionally a boolean can be provided to start the 'BloomBeat' effect immediately.
+- DisableBloomBeat
+  - Disables the above event effect.
+- SetBloomIntensity (arg 1: intensity)
+  - Sets the intensity of the bloom effect in the scene.
+- SetBloomDiffusion (arg 1: diffusion)
+  - Sets the diffusion of the bloom effect in the scene.
+- EaseBloomIntensity (arg 1: intensity, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the intensity of the bloom effect in the scene over time.
+- EaseBloomDiffusion (arg 1: diffusion, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the diffusion of the bloom effect in the scene over time.
+- SetAlpha (arg 1: alpha) (alias: SetPathAlpha)
+  - Sets the 'global alpha' value of most background elements. This includes GridAlpha, and ParticleAlpha, but not ColorSquareAlpha.
+- SetLeftAlpha (arg 1: alpha) (alias: SetLeftPathAlpha)
+  - Sets the 'global alpha' value of left track background elements.
+- SetRightAlpha (arg 1: alpha) (alias: SetRightPathAlpha)
+  - Sets the 'global alpha' value of right track background elements.
+- EaseAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease) (alias: EasePathAlpha)
+  - Sets the 'global alpha' value of most background elements over time. This includes GridAlpha, and ParticleAlpha, but not ColorSquareAlpha.
+- EaseLeftAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease) (alias: EaseLeftPathAlpha)
+  - Sets the 'global alpha' value of left track background elements over time.
+- EaseRightAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease) (alias: EaseRightPathAlpha)
+  - Sets the 'global alpha' value of right track background elements over time.
+- SetGridAlpha (arg 1: alpha)
+  - Sets the alpha of the grid background elements. This is affected by the SetAlpha 'global alpha' value.
+- SetLeftGridAlpha (arg 1: alpha)
+  - Sets the alpha of the grid background element on the left side of the left track. This is affected by the SetAlpha 'global alpha' and SetLeftAlpha 'global alpha' value.
+- SetRightGridAlpha (arg 1: alpha)
+  - Sets the alpha of the grid background element on the right side of the right track. This is affected by the SetAlpha 'global alpha' and SetRightAlpha 'global alpha' value.
+- EaseGridAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the grid background elements. This is affected by the SetAlpha 'global alpha' value.
+- EaseLeftGridAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the grid background element on the left side of the left track over time. This is affected by the SetAlpha 'global alpha' and SetLeftAlpha 'global alpha' value.
+- EaseRightGridAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the grid background element on the right side of the right track over time. This is affected by the SetAlpha 'global alpha' and SetRightAlpha 'global alpha' value.
+- SetParticleAlpha (arg 1: alpha)
+  - Sets the alpha of new particles. This is affected by the SetAlpha 'global alpha' value.
+- SetLeftParticleAlpha (arg 1: alpha)
+  - Sets the alpha of new particles on the left side of the left track. This is affected by the SetAlpha 'global alpha' value and SetLeftAlpha 'global alpha' value.
+- SetRightParticleAlpha (arg 1: alpha)
+  - Sets the alpha of new particles on the right side of the right track. This is affected by the SetAlpha 'global alpha' value and SetRightAlpha 'global alpha' value.
+- EaseParticleAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of new particles over time. This is affected by the SetAlpha 'global alpha' value.
+- EaseLeftParticleAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of new particles on the left side of the left track over time. This is affected by the SetAlpha 'global alpha' value and SetLeftAlpha 'global alpha' value.
+- EaseRightParticleAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of new particles on the right side of the right track over time. This is affected by the SetAlpha 'global alpha' value and SetRightAlpha 'global alpha' value.
+- SetParticleSpeed (arg 1: speed)
+  - Sets the speed of the incoming particles.
+- SetLeftParticleSpeed (arg 1: speed)
+  - Sets the speed of the incoming particles on the left side of the left track.
+- SetRightParticleSpeed (arg 1: speed)
+  - Sets the speed of the incoming particles on the right side of the right track.
+- EaseParticleSpeed (arg 1: speed, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the speed of the incoming particles over time.
+- EaseLeftParticleSpeed (arg 1: speed, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the speed of the incoming particles on the left side of the left track over time.
+- EaseRightParticleSpeed (arg 1: speed, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the speed of the incoming particles on the right side of the right track over time.
+- SetColorSquareAlpha (arg 1: alpha)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares.
+- SetLeftColorSquareAlpha (arg 1: alpha)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares and RunSpawnColorSquareLeft.
+- SetRightColorSquareAlpha (arg 1: alpha)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares and RunSpawnColorSquareRight.
+- EaseColorSquareAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares over time.
+- EaseLeftColorSquareAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares and RunSpawnColorSquareLeft over time.
+- EaseRightColorSquareAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the color squares spawned by RunSpawnColorSquares and RunSpawnColorSquareRight over time.
+- RunPulse
+  - Fires a gradient pulse from the outer side of each track.
+- RunLeftPulse
+  - Fires a gradient pulse out from the left side of the left track.
+- RunRightPulse
+  - Fires a gradient pulse out from the right side of the right track.
+- RunSpawnColorSquares
+  - Spawns a randomly colored square out to the side of each track. These will have a ripple and fade out, and move behind the camera.
+- RunSpawnColorSquareLeft
+  - Spawns a randomly colored square out to the side of the left track. Acts the same as the above 'RunSpawnColorSquares' event, except with one square.
+- RunSpawnColorSquareRight
+  - Spawns a randomly colored square out to the side of the right track. Acts the same as the above 'RunSpawnColorSquares' event, except with one square.

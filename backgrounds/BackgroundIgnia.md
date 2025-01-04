@@ -1,9 +1,11 @@
-## Events for Background: Ignia
+## Events for Background: BackgroundIgnia
+
+.xdrv Metadata: `STAGE_BACKGROUND=BackgroundIgnia`
 
 The format of events is as follows: `#EVENT=EventName,Argument1,Argument2` etc..
 
-- EnableBloomBeat
-  - Enables bloom on every whole beat.
+- EnableBloomBeat (arg 1 (optional): start now)
+  - Enables bloom on every whole beat, optionally a boolean can be provided to start the 'BloomBeat' effect immediately.
 - DisableBloomBeat
   - Disables the above event effect.
 - SetBloomIntensity (arg 1: intensity)
