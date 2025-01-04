@@ -209,22 +209,22 @@ These functions apply to the chart this unlock file is for, and only apply to th
 `GetBeatenStaffGhostCount(bool autodriftOffOnly)`
 - Gets the current player's beaten staff ghost count. Optionally provide a boolean to only count staff ghosts beaten with autodrift off.
 
-`GetChartCountInGroupAndDifficulty(string group, int difficulty)`
+`GetChartCountInGroupAndDifficulty(string group, int difficulty, (optional) bool includeSubfolders)`
 - Gets the amount of charts in a folder, on a specific difficulty.
 
-`GetChartCountInGroup(string group)`
+`GetChartCountInGroup(string group, (optional) bool includeSubfolders)`
 - Gets the amount of charts in a folder.
 
-`GetSongCountInGroup(string group)`
+`GetSongCountInGroup(string group, (optional) bool includeSubfolders)`
 - Gets the amount of songs in a folder.
 
-`GetClearedChartCountInGroupAndDifficulty(string group, int difficulty)`
+`GetClearedChartCountInGroupAndDifficulty(string group, int difficulty, (optional) bool includeSubfolders)`
 - Gets the amount of cleared charts in a folder, on a specific difficulty.
 
-`GetClearedChartCountInGroup(string group)`
+`GetClearedChartCountInGroup(string group, (optional) bool includeSubfolders)`
 - Gets the amount of cleared charts in a folder.
 
-`GetClearedSongCountInGroup(string group)`
+`GetClearedSongCountInGroup(string group, (optional) bool includeSubfolders)`
 - Gets the amount of cleared songs in a folder.
 
 `HasEXOnLevel(int difficulty)`
