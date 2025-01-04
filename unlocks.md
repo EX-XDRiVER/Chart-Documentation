@@ -39,8 +39,17 @@ All of these functions will execute relating to the chart you are making this un
 `GetBestWings()`
 - This will get the player's best wings on the chart.
 
-`GetSongGroup()`
-- Gets the current 'group', or folder name that this chart is located in.
+`GetGroup()`
+- Gets the 'group' this folder is located in. This does NOT include the 'subgroup', only the parent folder.
+
+`GetSubgroup()`
+- Gets the 'subgroup' this folder is located in. If this chart is not in a subgroup, this returns `null`.
+
+`GetSongGroup()` (alias: `GetFullGroup()`)
+- Gets the current 'group', or folder name that this chart is located in. This includes subfolders.
+
+`SongGroupExists(string group)`
+- Returns `true` or `false` if a 'group' or folder name has songs.
 
 `HasMinimumScore(int score)`
 - Compare the player's scores on this chart to the specified score. If the player has a score above or equal to the specified score, this returns true.
