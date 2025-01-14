@@ -33,11 +33,20 @@ All of these functions will execute relating to the chart you are making this un
 `HasClearedThisSong()`
 - Returns true if the player has cleared any chart for this song.
 
+`GetBestScore()`
+- This will get the player's best score on the chart.
+
+`GetBestEXScore()`
+- This will get the player's best EX score on the chart.
+
+`GetBestTime()`
+- This will get the player's best time on the chart. This returns -1 if the player has not played the chart, or if the time is a DNF.
+
 `GetBestMedal()`
 - This will get the player's best medal on the chart, and returns a numeric representation of the medal type.
 
 `GetBestWings()`
-- This will get the player's best wings on the chart.
+- This will get the player's best wings on the chart, and returns a numeric representation of the wings type.
 
 `GetGroup()`
 - Gets the 'group' this folder is located in. This does NOT include the 'subgroup', only the parent folder.
@@ -87,28 +96,19 @@ All of these functions will execute relating to the chart you are looking up.
 - Or this format for customs: 'AdditionalSongs/My Folder/Song Name'
 - Difficulties are numeric. 0 is BEGINNER, 3 is EXTREME.
 
-`HasSeenSongByName(string songName)`
-- Returns true if the specified song on ANY difficulty has been played in any way. Even if the player quits out before finishing.
-
-`HasSeenChartByName(string songName)`
+`HasSeenSongByName(string songName)` (alias: `HasSeenChartByName(string songName)`)
 - Returns true if the specified song on ANY difficulty has been played in any way. Even if the player quits out before finishing.
 
 `HasSeenChartByNameAndDifficulty(string songName, int difficulty)`
-- Returns true if the specified song on the specified difficulty has been played in any way. Even if the player quits out before finishing.
+- Returns true if the specified chart has been played in any way. Even if the player quits out before finishing.
 
-`HasPlayedSongByName(string songName)`
-- Returns true if the specified song on ANY difficulty has been played, and the player has play data for it.
-
-`HasPlayedChartByName(string songName)`
+`HasPlayedSongByName(string songName)` (alias: `HasPlayedChartByName(string songName)`)
 - Returns true if the specified song on ANY difficulty has been played, and the player has play data for it.
 
 `HasPlayedChartByNameAndDifficulty(string songName, int difficulty)`
 - Returns true if the specified song on the specified difficulty has been played, and the player has play data for it.
 
-`HasClearedSongByName(string songName)`
-- If the player has cleared the specified song on ANY difficulty, this returns true.
-
-`HasClearedChartByName(string songName)`
+`HasClearedSongByName(string songName)` (alias: `HasClearedChartByName(string songName)`)
 - If the player has cleared the specified song on ANY difficulty, this returns true.
 
 `HasClearedChartByNameAndDifficulty(string songName, int difficulty)`
@@ -127,34 +127,43 @@ All of these functions will execute relating to the chart you are looking up.
 - If the player has a score below or equal to the specified score on the specified song on ANY difficulty, this returns true.
 
 `HasScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore)`
-- If the player has a score between or equal to the specified minimum and maximum scores on the specified song and difficulty, this returns true.
+- If the player has a score between or equal to the specified minimum and maximum scores on the chart, this returns true.
 
 `HasMinimumEXScoreByNameAndDifficulty(string songName, int difficulty, int score)`
-- If the player has an EX score above or equal to the specified EX score on a specified song name and difficulty, this returns true.
+- If the player has an EX score above or equal to the specified EX score on the specified chart, this returns true.
 
 `HasMaximumEXScoreByNameAndDifficulty(string songName, int difficulty, int score)`
-- If the player has an EX score below or equal to the specified EX score on a specified song name and difficulty, this returns true.
+- If the player has an EX score below or equal to the specified EX score on the chart, this returns true.
 
 `HasEXScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore)`
-- If the player has a score between or equal to the specified minimum and maximum EX scores on the specified song on the specified difficulty, this returns true.
+- If the player has a score between or equal to the specified minimum and maximum EX scores on the specified chart, this returns true.
 
 `HasMinimumClearTimeByNameAndDifficulty(string songName, int difficulty, float time)`
-- If the player has an EX score above or equal to the specified EX score on a specified song name and difficulty, this returns true.
+- If the player has an EX score above or equal to the specified EX score on the specified chart, this returns true.
 
 `HasMaximumClearTimeByNameAndDifficulty(string songName, int difficulty, float time)`
-- If the player has an EX score below or equal to the specified EX score on a specified song name and difficulty, this returns true.
+- If the player has an EX score below or equal to the specified EX score on the specified chart, this returns true.
 
 `HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTime, float maxTime)`
-- If the player has an EX score between or equal to the specified EX scores on a specified song name and difficulty, this returns true.
+- If the player has an EX score between or equal to the specified EX scores on the specified chart, this returns true.
 
 `IsChartUnlockedByNameAndDifficulty(string songName, int difficulty)`
 - Checks if the specified song and difficulty is unlocked. Circular dependencies / excessive chains of this function will give an error and return false.
 
+`GetBestScoreByNameAndDifficulty(string songName, int difficulty)`
+- Gets the best score the player has on the specified chart.
+
+`GetBestEXScoreByNameAndDifficulty(string songName, int difficulty)`
+- Gets the best EX score the player has on the specified chart.
+
+`GetBestTimeByNameAndDifficulty(string songName, int difficulty)`
+- Gets the best time the player has on the specified chart. This returns -1 if the time is a DNF, or the player has no score on the chart.
+
 `GetBestMedalByNameAndDifficulty(string songName, int difficulty)`
-- Gets the best medal the player has on a specified song name and difficulty as a numerical representation.
+- Gets the best medal the player has on the specified chart as a numerical representation.
 
 `GetBestWingsByNameAndDifficulty(string songName, int difficulty)`
-- Gets the best wings the player has on a specified song name and difficulty as a numerical representation.
+- Gets the best wings the player has on the specified chart as a numerical representation.
 
 ## Chart Omittance
 These functions apply to the chart this unlock file is for, and only apply to the song wheel. These settings do not show in gameplay.
