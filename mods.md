@@ -75,7 +75,10 @@ Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, 
 - Rotate the camera around the Z axis.
 
 "camera_fov" (Alias: "camera_field_of_view")
-- Change the camera's field of view. Default: 100, Minimum: 1, Maximum: 179
+- Change the camera's field of view. Only applies to perspective (default) camera. Default: 100, Minimum: 1, Maximum: 179
+
+"camera_size" (Alias: "camera_orthographic_size")
+- Change the camera's size. Only applies to orthographic camera. Default: 5, if set to 0, this will be set to 0.01 to avoid errors.
 
 "note_move_x" (Column specific variant: "noteX_move_x" where X is 1-6)
 - Move all notes along the X axis.

@@ -30,6 +30,8 @@ The format of events is as follows: `#EVENT=EventName,Argument1,Argument2` etc..
   - Sets the individual alpha of the Momentum Bar UI element.
 - SetUIAlphaLifeBar (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
   - Sets the individual alpha of the Life Bar UI element.
+- SetCameraProjection (arg 1: string)
+  - Sets the camera type. Can be "perspective" or "orthographic".
 - SetCheckpointLabel (arg 1: string)
   - Set the checkpoint label to a desired string.
 - ResetCheckpointLabel
