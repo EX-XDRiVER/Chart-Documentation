@@ -164,10 +164,10 @@ Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, 
 "track_move_x" (Track specific variants: "trackleft_move_x" and "trackright_move_x")
 - Move the tracks along the X axis.
 
-"track_move_y" (Track specific variants: "trackleft_move_x" and "trackright_move_x")
+"track_move_y" (Track specific variants: "trackleft_move_y" and "trackright_move_y")
 - Move the tracks along the Y axis.
 
-"track_move_z" (Track specific variants: "trackleft_move_x" and "trackright_move_x")
+"track_move_z" (Track specific variants: "trackleft_move_z" and "trackright_move_z")
 - Move the tracks along the Z axis.
 
 "track_rotate_x" (Track specific variants: "trackleft_rotate_x" and "trackright_rotate_x")
