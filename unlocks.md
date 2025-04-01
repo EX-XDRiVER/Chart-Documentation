@@ -39,9 +39,6 @@ All of these functions will execute relating to the chart you are making this un
 `GetBestEXScore()`
 - This will get the player's best EX score on the chart.
 
-`GetBestTime()`
-- This will get the player's best time on the chart. This returns -1 if the player has not played the chart, or if the time is a DNF.
-
 `GetBestMedal()`
 - This will get the player's best medal on the chart, and returns a numeric representation of the medal type.
 
@@ -77,15 +74,6 @@ All of these functions will execute relating to the chart you are making this un
 
 `HasEXScoreInRange(int min, int max)`
 - Compare the player's scores on this chart to the specified scores. If the player has an EX score between or equal to the minimum and maximum EX scores, this returns true.
-
-`HasMinimumClearTime(float time)`
-- Compare the player's times on this chart to the specified time. If the player has a time above or equal to the specified time in seconds, this returns true.
-
-`HasMaximumClearTime(float time)`
-- Compare the player's times on this chart to the specified time. If the player has a time below or equal to the specified time in seconds, this returns true.
-
-`HasClearTimeInRange(float min, float max)`
-- Compare the player's times on this chart to the specified time. If the player has a time between or equal to the specified times in seconds, this returns true.
 
 `IsEXStageAvailable()`
 - If the player is in arcade mode and has a full EX meter, this returns true. (Custom charts are not available in Arcade Mode.)
@@ -138,15 +126,6 @@ All of these functions will execute relating to the chart you are looking up.
 `HasEXScoreInRangeByNameAndDifficulty(string songName, int difficulty, int minScore, int maxScore)`
 - If the player has a score between or equal to the specified minimum and maximum EX scores on the specified chart, this returns true.
 
-`HasMinimumClearTimeByNameAndDifficulty(string songName, int difficulty, float time)`
-- If the player has an EX score above or equal to the specified EX score on the specified chart, this returns true.
-
-`HasMaximumClearTimeByNameAndDifficulty(string songName, int difficulty, float time)`
-- If the player has an EX score below or equal to the specified EX score on the specified chart, this returns true.
-
-`HasClearTimeInRangeByNameAndDifficulty(string songName, int difficulty, float minTime, float maxTime)`
-- If the player has an EX score between or equal to the specified EX scores on the specified chart, this returns true.
-
 `IsChartUnlockedByNameAndDifficulty(string songName, int difficulty)`
 - Checks if the specified song and difficulty is unlocked. Circular dependencies / excessive chains of this function will give an error and return false.
 
@@ -155,9 +134,6 @@ All of these functions will execute relating to the chart you are looking up.
 
 `GetBestEXScoreByNameAndDifficulty(string songName, int difficulty)`
 - Gets the best EX score the player has on the specified chart.
-
-`GetBestTimeByNameAndDifficulty(string songName, int difficulty)`
-- Gets the best time the player has on the specified chart. This returns -1 if the time is a DNF, or the player has no score on the chart.
 
 `GetBestMedalByNameAndDifficulty(string songName, int difficulty)`
 - Gets the best medal the player has on the specified chart as a numerical representation.
@@ -244,7 +220,7 @@ These functions apply to the chart this unlock file is for, and only apply to th
 `RedirectChart(bool redirect, bool hideStats, string lookup, int difficulty)`
 - Redirects this chart to another chart based on the lookup string and difficulty.
   - Does NOT display the play data of the redirected chart on this chart.
-  - Providing 'true' for the 'hideStats' bool will scramble the best score, EX, and time on the UI.
+  - Providing 'true' for the 'hideStats' bool will scramble the best score, EX, and gauges on the UI.
 
 `BlockRedirects(bool block)
 - Prevents any chart from redirecting to this one.

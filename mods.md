@@ -7,7 +7,7 @@
 Mods for a chart are stored in a .lua file! This file is executed at gameplay.
 There are two kinds of mod initialization calls, "Mod" and "Ease".
 
-For basic mods, first we need to call the container object which stores all of our chart mods.
+For basic chart mods, first we need to call the container object which stores all of our chart mods.
 To call this object's method, we use `xdrv.Mod` or `xdrv.Set`.
 The arguments it takes are:
 - The mod name
@@ -45,7 +45,144 @@ Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, 
 </details>
 
 <details>
-<summary>List of All Mods</summary>
+<summary>Note Mods</summary>
+As of 1.4.1, specific notes can have their own mods given to them, called note mods.
+
+To set a note mod, provide the Note Data object or note ID as the first argument in a `xdrv.Set` or `xdrv.Ease` function call.
+
+Example:
+- `xdrv.Set(note, "scale_x", 2, "beat", 8);`
+
+To get a Note Data object, you must obtain one via one of these functions:
+
+`xdrv.GetNoteData()`
+- Returns every Note Data object in the chart.
+
+`xdrv.GetNoteDataInBeatRange(float startBeat, float endBeat)`
+- Returns every Note Data object in the chart within a range of two beats. Does not include the note on the end beat. (Inclusive)
+
+`xdrv.GetNoteDataInTimeRange(float startTime, float endTime)`
+- Returns every Note Data object in the chart within a range of two timestamps.
+
+`xdrv.GetNoteDataInDisplayBeatRange(float startDisplayBeat, float endDisplayBeat)`
+- Returns every Note Data object in the chart within a range of two display beats.
+
+`xdrv.GetNoteDataOfType(int noteType)`
+- Returns every Note Data object in the chart of a specific Note Type in integer form.
+
+`xdrv.GetNoteDataOfTypeInBeatRange(int noteType, float startBeat, float endBeat)`
+- Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two beats.
+
+`xdrv.GetNoteDataOfTypeInTimeRange(int noteType, float startTime, float endTime)`
+- Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two timestamps.
+
+`xdrv.GetNoteDataOfTypeInDisplayBeatRange(int noteType, float startDisplayBeat, float endDisplayBeat)`
+- Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two display beats.
+
+`xdrv.GetNoteDataOfType(string noteTypeString)`
+- Returns every Note Data object in the chart of a specific Note Type in string form.
+
+`xdrv.GetNoteDataOfTypeInBeatRange(string noteTypeString, float startBeat, float endBeat)`
+- Returns every Note Data object in the chart of a specific Note Type in string form within a range of two beats.
+
+`xdrv.GetNoteDataOfTypeInTimeRange(string noteTypeString, float startTime, float endTime)`
+- Returns every Note Data object in the chart of a specific Note Type in string form within a range of two timestamps.
+
+`xdrv.GetNoteDataOfTypeInDisplayBeatRange(string noteTypeString, float startDisplayBeat, float endDisplayBeat)`
+- Returns every Note Data object in the chart of a specific Note Type in string form within a range of two display beats.
+
+Each Note Data object has different values which can be used however you like, but cannot be modified.
+
+`ID`
+- The integer ID of the note. Note IDs start at 0, and end on the last note of the chart.
+
+`NoteType`
+- The integer representation of the note's type. More notes on Note Type below.
+
+`NoteTypeString`
+- The string representation of the note's type. More notes on Note Type below.
+
+`Beat`
+- The beat of the note.
+
+`Time`
+- The time of the note.
+
+`DisplayBeat`
+- The display beat of the note, which is the "position" of the note when factoring in `#SCROLL` timing segments.
+
+`BeatLength`
+- If the note is a `HoldHead`, `GearLeftHead`, `GearRightHead`, `DriftLeftHead`, or `DriftRightHead`, this is how long the note is active for in beats.
+
+`TimeLength`
+- If the note is a `HoldHead`, `GearLeftHead`, `GearRightHead`, `DriftLeftHead`, or `DriftRightHead`, this is how long the note is active for in seconds.
+
+`DisplayBeatLength`
+- If the note is a `HoldHead`, `GearLeftHead`, `GearRightHead`, `DriftLeftHead`, or `DriftRightHead`, this is how long the note is active for in display beats.
+
+`Ticks`
+- A table of all Hold/Gear ticks in seconds.
+
+`Ignore`
+- If the note is a fake, or cannot be hit. `HoldTail`, `GearLeftTail`, `GearRightTail`, `DriftLeftTail`, and `DriftRightTail` notes are always ignored.
+
+`Column`
+- The column the note belongs to. Note Columns are 0-5, Gear Columns are 6-7, Drift Column is 8.
+
+`Overlap`
+- If this note overlaps with a gear. 
+
+</details>
+
+<details>
+<summary>Note Types</summary>
+
+`Invalid` (Type: 0)
+- Unused, except if something goes wrong.
+
+`Tap` (Type: 1)
+- Tap notes.
+
+`HoldHead` (Type: 2)
+- Hold heads. Contains information about how long the hold lasts.
+
+`HoldTail` (Type: 3)
+- Hold tails. Always fake/ignored. Essentially a placeholder note with no texture, and should not be used unless you know what you're doing.
+
+`GearLeftHead` (Type: 4)
+- Left gear heads. Contains information about how long the gear lasts.
+
+`GearRightHead` (Type: 5)
+- Right gear heads. Contains information about how long the gear lasts.
+
+`GearLeftTail` (Type: 6)
+- Left gear tails. Always fake/ignored, but has a texture.
+
+`GearRightTail` (Type: 7)
+- Right gear tails. Always fake/ignored, but has a texture.
+
+`DriftLeftHead` (Type: 8)
+- Left drift heads. Contains information about how long the drift lasts.
+
+`DriftRightHead` (Type: 9)
+- Right drift heads. Contains information about how long the drift lasts.
+
+`DriftTail` (Type: 10)
+- Unused.
+
+`DriftLeftTail` (Type: 11)
+- Left drift tails. Always fake/ignored.
+
+`DriftRightTail` (Type: 12)
+- Right drift heads. Always fake/ignored.
+
+`Mine` (Type: 13)
+- Mine notes. If pressed, they count as a BREAK, otherwise count as an X-LIMIT. Contains the same information as your standard Tap note.
+
+</details>
+
+<details>
+<summary>List of All Chart Mods</summary>
 
 "speed" (Column specific variants: "speedX" where X is 1-9, Aliases: "noteX_speed" where X is 1-9, "gearleft_speed", "gearright_speed", "drift_speed")
 - Changes the scroll speed multiplier independent of actual scroll speed.
@@ -271,6 +408,50 @@ Which means to ease the "speed" modifier value from 0 to 1, starting at beat 4, 
 
 "note_opacityX" (Where X is 1-9)
 - A column specific variant of "note_opacity" for all notes including gears and drifts. Column 9 does not affect left/right drifts independently, but all drift notes.
+
+</details>
+
+<details>
+<summary>List of all Note Mods</summary>
+
+"speed"
+- Changes the note's scroll speed multiplier independent of actual scroll speed.
+
+"move_x"
+- Moves the note along the X axis.
+
+"move_y"
+- Moves the note along the Y axis.
+
+"move_z"
+- Moves the note along the Z axis.
+
+"rotate_x"
+- Rotates the note along the X axis in euler angles.
+
+"rotate_y"
+- Rotates the note along the Y axis in euler angles.
+
+"rotate_z"
+- Rotates the note along the Z axis in euler angles.
+
+"scale_x"
+- Additively scales the note along the X axis. Default: 1
+
+"scale_y"
+- Additively scales the note along the Y axis. Default: 1
+
+"scale_z"
+- Additively scales the note along the Z axis. Default: 1
+
+"brake"
+- Slows down the note as it gets closer to the judge line.
+
+"accel"
+- Speeds up the note as it starts approaching the judge line.
+
+"opacity"
+- Changes how opaque the note is. Default: 1
 
 </details>
 
