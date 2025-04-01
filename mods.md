@@ -506,6 +506,18 @@ Each Note Data object has different values which can be used however you like, b
 
 ## Other Functions
 
+### Loading Modfiles within Modfiles
+
+<details>
+<summary>Lua Loading Documentation</summary>
+
+As of 1.4.1, you can now call `xdrv.Load` to load a modfile from a modfile! Helpful for collaborations.
+
+Example:
+- `xdrv.Load("other_modfile.lua");`
+
+</details>
+
 ### Events in Lua
 
 <details>
