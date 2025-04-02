@@ -105,6 +105,7 @@ For the main notes:
 - 1 is a tap note.
 - 2 is the start of a hold. Inbetween the hold 'head' and 'tail', there can only be 0s.
 - 4 is the hold tail, which ends an existing hold.
+- M is a mine note, hitting these will result in a BREAK.
 
 For gears:
 - 0 is an empty space.
