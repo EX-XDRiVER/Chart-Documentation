@@ -182,7 +182,7 @@ Each Note Data object has different values which can be used however you like, b
 </details>
 
 <details>
-<summary>List of All Chart Mods</summary>
+<summary>List of all Chart Mods</summary>
 
 "speed" (Column specific variants: "speedX" where X is 1-9, Aliases: "noteX_speed" where X is 1-9, "gearleft_speed", "gearright_speed", "drift_speed")
 - Changes the scroll speed multiplier independent of actual scroll speed.
@@ -456,7 +456,7 @@ Each Note Data object has different values which can be used however you like, b
 </details>
 
 <details>
-<summary>List of All Ease Types</summary>
+<summary>List of all Ease Types</summary>
 
 * Linear
 * InQuad
@@ -534,6 +534,22 @@ This will run the event for setting the alpha for the UI for song metadata and s
 All events, and arguments (including optional ones) are supported.
 
 Additionally, you can call this function with snake_case. Example: `xdrv.run_event`
+</details>
+
+### Measure Lines in Lua
+
+<details>
+<summary>Measure Lines Documentation</summary>
+
+As of 1.4.22, you can call add measure lines from lua files.
+
+The syntax for AddMeasureLine is `xdrv.AddMeasureLine(string beatOrTime, float timingValue, params object[] values)`.
+
+Values is an optionally, track-specific measure line argument which can be either `"left"` or `"right"`.
+
+Example: `xdrv.AddMeasureLine("beat", 0, "left");`
+
+Additionally, you can call this function with snake_case. Example: `xdrv.add_measure_line`
 </details>
 
 ### Player Options (Note Color)
