@@ -204,7 +204,7 @@ Different timing segments include:
 - In each chart, a checkpoint is generated at row 0 with the name `Start Line`. The name of this checkpoint can be changed by manually defining the checkpoint at row 0.
 
 `#MEASURE_LINE`
-- Creates a measure line at the given note row.
+- Creates a measure line at the given note row. Can optionally be given `left` or `right` as the first argument to be only on a specific track.
 
 ### Example Chart File
 Here's an example of a complete .xdrv file.

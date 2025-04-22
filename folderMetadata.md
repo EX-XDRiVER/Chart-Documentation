@@ -35,15 +35,15 @@ An example `metadata.json` file is provided below.
 
 ```
 {
+	"DisplayName": "My Cool Folder",
 	"BannerPath": "banner.jpg",
 	"LogoPath": "logo.jpg",
-	"DisplayName": "My Cool Folder",
-	"SortByDisplayName": false,
 	"Animate": true,
+	"SortByDisplayName": false,
 	"HideGradients": false,
 	"HideFolderStats": false,
-	"HideSongCount": false,
 	"HideCustomIcon": false,
+	"HideSongCount": false,
 	"BannerOpacity": 0.5,
 	"LogoOpacity": 1.0
 }

@@ -577,3 +577,41 @@ You can get a player's scroll speed using `xdrv.GetPlayerScrollSpeed()`. This wi
 
 Additionally, you can call this function with snake_case. Example: `xdrv.get_player_scroll_speed`
 </details>
+
+## Command Line Arguments
+
+Command line arguments are extra parameters you can use when launching the game which can enable or disable certain features.
+
+To enable command line arguments, open the game's properties in Steam, and add these arguments in the 'Launch Options' field.
+
+### Chart Developer Mode
+
+Chart Developer Mode is enabled by providing the launch option `-chartdev`.
+
+This feature disables the results screen, score uploading and saving, multiplayer, and other modes.
+
+Chart Developer Mode disables the invalid chart check, which allows the user to skip reloading song folders when making rapid changes to a chart or modfile.
+
+The user can also use left/right arrow keys to navigate between checkpoints, and the down arrow key to replay the current checkpoint. There are notable issues with this feature.
+
+### Show Mods
+
+Show Mods is enabled by providing the launch option `-showmods`.
+
+This feature enables the game's debug text in gameplay if Chart Developer Mode is enabled.
+
+The debug text shows which mods are active, the most recent Timing Segment, current time, beat, and display beat, and more.
+
+### Dev Song Folders
+
+Developer Song Folders is enabled by providing the launch option `-devsongfolders`.
+
+These are a separate list of custom song folders to load from the default Additional Song Folders, and only load if this feature is enabled.
+
+This option only shows ingame in the 'CUSTOM' category if this feature is enabled.
+
+### Show Version Text
+
+Show Version Text is enabled by providing the launch option `-showversiontext`.
+
+This feature displays the current game version at the bottom left of the screen.
