@@ -8,7 +8,7 @@ Here you'll find information on the file formats to create custom charts for EX-
 
 ## ⚠️ Custom Content Creation & Distribution Rules
 - You should only create and distribute custom content with a music artist's and illustrator's work if you have permission from the music artists and illustrators.
-  - If an artist releases their music or illustration under a **[Creative Commons](https://creativecommons.org/licenses/)** license or belongs in the public domain, you may use it as long as the use of their work complies with their terms. Please verify this information before using their work. In addition, tell us where you found this information, either on our **[Discord server](https://discord.gg/JGb4VTGTmk)**, or via **[email](mailto:contact@xdrv.team)**.
+  - If an artist releases their music or illustration under an applicable **[Creative Commons](https://creativecommons.org/licenses/)** license (**[NoDerivatives](https://creativecommons.org/licenses/by-nd/4.0/)** for example, would not be applicable for custom charts) or belongs in the public domain, you may use it as long as the use of their work complies with their terms. Please verify this information before using their work. In addition, tell us where you found this information, either on our **[Discord server](https://discord.gg/JGb4VTGTmk)**, or via **[email](mailto:contact@xdrv.team)**.
   - For remixes of songs, you must get permission from both the original music artists and the remixers.
   - For collaborations, you must get permission from all collaborators.
   - If any party declines the use of their work, you cannot use it. Bootlegs should not be used for this reason.
@@ -54,3 +54,5 @@ Please put content warnings on your custom content as appropriate. This can also
 
 ### Reporting Custom Content
 - If you have any concerns about custom content in any way, contact us at **[contact@xdrv.team](mailto:contact@xdrv.team)**.
+
+> Last updated on **May 5th, 2025**.
