@@ -190,7 +190,7 @@ Different timing segments include:
 - Sets the amount of beats starting at this timing segment to convert all notes within the region into fake notes.
 - Fake notes look identical and cannot be hit, and do not punish the player.
 - Optionally, takes an extra argument for a column-specific fake region.
-- For example, `#FAKE,16`, and `#FAKE,16,0`.
+- For example, `#FAKE=16`, and `#FAKE=16,0`.
 
 `#EVENT`
 - Sends an event to the current stage.
