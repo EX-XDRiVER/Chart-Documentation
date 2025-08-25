@@ -518,6 +518,15 @@ Example:
 
 </details>
 
+### Chart Difficulty
+
+<details>
+<summary>Chart Difficulty</summary>
+
+You can get the current chart's difficulty by calling `xdrv.GetChartDifficulty()`, which returns a number from 0 to 4 based on the difficulty, where 0 is BEGINNER.
+
+</details>
+
 ### Events in Lua
 
 <details>
@@ -552,10 +561,10 @@ Example: `xdrv.AddMeasureLine("beat", 0, "left");`
 Additionally, you can call this function with snake_case. Example: `xdrv.add_measure_line`
 </details>
 
-### Player Options (Note Color)
+### Player Options
 
 <details>
-<summary>Note Color Functions Documentation</summary>
+<summary>Note Colors</summary>
 
 As of 1.2.0, you can get the player's note color from a desired column.
 
@@ -568,14 +577,21 @@ You can also use `xdrv.GetPlayerNoteColorRed(int column)`, `xdrv.GetPlayerNoteCo
 Additionally, you can call these functions with snake_case. Example: `xdrv.get_player_note_color`
 </details>
 
-### Player Options (Scroll Speed)
-
 <details>
-<summary>Scroll Speed Functions Documentation</summary>
+<summary>Scroll Speed</summary>
 
 You can get a player's scroll speed using `xdrv.GetPlayerScrollSpeed()`. This will return the raw float value that the player has in options. This value has a minimum of 0.5 with no maximum.
 
 Additionally, you can call this function with snake_case. Example: `xdrv.get_player_scroll_speed`
+</details>
+
+<details>
+<summary>Refresh Rate</summary>
+
+You can get the player's current refresh rate using `xdrv.GetPlayerRefreshRate()`.
+
+Additionally, you can call this function with snake_case. Example: `xdrv.get_player_refresh_rate`
+
 </details>
 
 ## Command Line Arguments

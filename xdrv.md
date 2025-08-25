@@ -20,6 +20,9 @@ Chart Metadata starts at the top of the .xdrv file.
 `MUSIC_CREDIT`, is used whenever a song belongs to another game or album, and you want to reference it. You can put any string of text in this field. Using this with the 'SUBTITLE' field will make it alternate between the two.
 > `MUSIC_CREDIT=From "Game"`
 
+`MUSIC_CREDIT_COLOR`, is used to change the color of the `MUSIC_CREDIT` value in the song wheel. This value takes a hex code in the `#RRGGBBAA` or `#RRGGBB` format.
+> `MUSIC_CREDIT_COLOR=#FFFFFFFF`
+
 `MUSIC_AUDIO`, is the file path to the audio file.
 > `MUSIC_AUDIO=audio.ogg`
 
@@ -46,6 +49,12 @@ Chart Metadata starts at the top of the .xdrv file.
 
 `CHART_AUTHORS`, are the names or usernames of the people who made this chart, separated by comma. This will cycle through all of the names on this list.
 > `CHART_AUTHORS=Name 1, Name 2, Name 3`
+
+`MOD_AUTHOR`, is the name or username of the person who made the mods for this chart.
+> `MOD_AUTHOR=Me`
+
+`MOD_AUTHORS`, are the names or usernames of the people who made this chart, separated by comma. This will cycle through all of the names on this list.
+> `MOD_AUTHORS=Name 1, Name 2, Name 3`
 
 `CHART_TAGS`, is an array of 4 floats, currently unused by the game.
 > `CHART_TAGS=0,0,0,0`
