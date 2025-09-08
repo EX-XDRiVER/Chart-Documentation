@@ -212,6 +212,12 @@ These functions apply to the chart this unlock file is for, and only apply to th
 `GetClearedSongCountInGroup(string group, (optional) bool includeSubfolders)`
 - Gets the amount of cleared songs in a folder.
 
+`GetSteamID()`
+- Gets the player's current Steam User ID.
+
+`GetGamemode()`
+- Gets the current gamemode.
+
 `HasEXOnLevel(int difficulty)`
 - Returns true if the player has an EX grade on any chart on the specified difficulty, only works on charts in the base game.
 

@@ -26,6 +26,9 @@ Chart Metadata starts at the top of the .xdrv file.
 `MUSIC_AUDIO`, is the file path to the audio file.
 > `MUSIC_AUDIO=audio.ogg`
 
+`DISABLE_MUSIC_PREVIEW`, is a boolean that disables the music preview in the song wheel.
+> `DISABLE_MUSIC_PREVIEW=FALSE`
+
 `MUSIC_PREVIEW_START`, is the time in seconds of when you should start your music preview in the song wheel.
 > `MUSIC_PREVIEW_START=0`
 
