@@ -559,6 +559,16 @@ Values is an optionally, track-specific measure line argument which can be eithe
 Example: `xdrv.AddMeasureLine("beat", 0, "left");`
 
 Additionally, you can call this function with snake_case. Example: `xdrv.add_measure_line`
+
+As of 1.6.0, you can hide default measure lines.
+
+The syntax for AddHiddenMeasureLineRegion is `xdrv.AddHiddenMeasureLineRegion(string beatOrTimeStart, float timingValueStart, string beatOrTimeEnd, float timingValueEnd);`
+
+Example: `xdrv.AddHiddenMeasureLineRegion("beat", 4, "beat", 8);` will hide automatically generated measure lines from beats 4 to 8 inclusive.
+
+Additionally, you can call this function with snake_case. Example:
+`xdrv.add_hidden_measure_line_region`
+
 </details>
 
 ### Player Options
