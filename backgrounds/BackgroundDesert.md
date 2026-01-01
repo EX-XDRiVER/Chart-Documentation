@@ -1,0 +1,78 @@
+## Events for Background: BackgroundDesert
+
+.xdrv Metadata: `STAGE_BACKGROUND=BackgroundDesert`
+
+The format of events is as follows: `#EVENT=EventName,Argument1,Argument2` etc..
+
+- EnableBloomBeat (arg 1 (optional): start now)
+  - Enables bloom on every whole beat, optionally a boolean can be provided to start the 'BloomBeat' effect immediately.
+- DisableBloomBeat
+  - Disables the above event effect.
+- SetBloomIntensity (arg 1: intensity)
+  - Sets the intensity of the bloom effect in the scene.
+- SetBloomDiffusion (arg 1: diffusion)
+  - Sets the diffusion of the bloom effect in the scene.
+- EaseBloomIntensity (arg 1: intensity, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the intensity of the bloom effect in the scene over time.
+- EaseBloomDiffusion (arg 1: diffusion, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the diffusion of the bloom effect in the scene over time.
+- SetDesertAlpha (arg 1: alpha)
+  - Sets the alpha of both sides of the desert.
+  - Aliases: SetPathAlpha
+- SetLeftDesertAlpha (arg 1: alpha)
+  - Sets the alpha of the left side of the desert. Blended with DesertAlpha.
+  - Aliases: SetLeftPathAlpha
+- SetRightDesertAlpha (arg 1: alpha)
+  - Sets the alpha of the right side of the desert. Blended with DesertAlpha.
+  - Aliases: SetRightPathAlpha
+- SetStructureAlpha (arg 1: alpha)
+  - Sets the alpha of all structures in the desert. Blended with DesertAlpha.
+  - Aliases: SetPyramidAlpha
+- SetLeftStructureAlpha (arg 1: alpha)
+  - Sets the alpha of the structures on the left side of the desert. Blended with DesertAlpha, LeftDesertAlpha, and StructureAlpha.
+  - Aliases: SetLeftPyramidAlpha
+- SetRightStructureAlpha (arg 1: alpha)
+  - Sets the alpha of the structures on the right side of the desert. Blended with DesertAlpha, RightDesertAlpha, and StructureAlpha.
+  - Aliases: SetRightPyramidAlpha
+- SetTorchAlpha (arg 1: alpha)
+  - Sets the alpha of all torches in the desert. Blended with DesertAlpha.
+- SetLeftTorchAlpha (arg 1: alpha)
+  - Sets the alpha of the torches on the left side of the desert. Blended with DesertAlpha, LeftDesertAlpha, and TorchAlpha.
+- SetRightTorchAlpha (arg 1: alpha)
+  - Sets the alpha of the torches on the right side of the desert. Blended with DesertAlpha, RightDesertAlpha, and TorchAlpha.
+- EaseDesertAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of both sides of the desert over time.
+  - Aliases: EasePathAlpha
+- EaseLeftDesertAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the left side of the desert over time. Blended with DesertAlpha.
+  - Aliases: EaseLeftPathAlpha
+- EaseRightDesertAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the right side of the desert over time. Blended with DesertAlpha.
+  - Aliases: EaseRightPathAlpha
+- EaseStructureAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of all structures in the desert over time. Blended with DesertAlpha.
+  - Aliases: EasePyramidAlpha
+- EaseLeftStructureAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the structures on the left side of the desert over time. Blended with DesertAlpha, LeftDesertAlpha, and StructureAlpha.
+  - Aliases: EaseLeftPyramidAlpha
+- EaseRightStructureAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the structures on the right side of the desert over time. Blended with DesertAlpha, RightDesertAlpha, and TorchAlpha.
+  - Aliases: EaseRightPyramidAlpha
+- EaseTorchAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of all torches in the desert over time. Blended with DesertAlpha.
+- EaseLeftTorchAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the torches on the left side of the desert over time. Blended with DesertAlpha, LeftDesertAlpha, and TorchAlpha.
+- EaseRightTorchAlpha (arg 1: alpha, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the alpha of the torches on the right side of the desert over time. Blended with DesertAlpha, RightDesertAlpha, and TorchAlpha.
+- SetLightBrightness (arg 1: brightness)
+  - Sets the brightness of the directional light in the scene. Brightness can be between 0 and 1.
+- EaseLightBrightess (arg 1: brightness, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the brightness of the directional light in the scene over time. Brightness can be between 0 and 1.
+- EnableTorches (arg 1 (optional): duration, arg 2 (optional): time based)
+  - Enables torches in the scene, easing the torches into the sand if they are disabled.
+  - Eases torch to a height value of 1 with OutCubic easing, unless the duration of ease is set to 0 / omitted.
+- DisableTorches (arg 1 (optional): duration, arg 2 (optional): time based)
+  - Disables torches in the scene, easing the torches from the sand if they are enabled.
+  - Eases torch to a height value of 0 with InCubic easing, unless the duration of ease is set to 0 / omitted.
+- CustomMoveTorches(arg 1: height, arg 2: duration, arg 3 (optional): time based, arg 4 (optional): ease)
+  - Sets the height of the torches over time. Default torch height values are between 0 and 1, but torch height can be set to values outside that.
