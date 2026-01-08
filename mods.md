@@ -59,7 +59,7 @@ To get a Note Data object, you must obtain one via one of these functions:
 - Returns every Note Data object in the chart.
 
 `xdrv.GetNoteDataInBeatRange(float startBeat, float endBeat)`
-- Returns every Note Data object in the chart within a range of two beats. Does not include the note on the end beat. (Inclusive)
+- Returns every Note Data object in the chart within a range of two beats. Does not include the note on the end beat. (Exclusive)
 
 `xdrv.GetNoteDataInTimeRange(float startTime, float endTime)`
 - Returns every Note Data object in the chart within a range of two timestamps.
@@ -69,27 +69,35 @@ To get a Note Data object, you must obtain one via one of these functions:
 
 `xdrv.GetNoteDataOfType(int noteType)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInBeatRange(int noteType, float startBeat, float endBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two beats.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInTimeRange(int noteType, float startTime, float endTime)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two timestamps.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInDisplayBeatRange(int noteType, float startDisplayBeat, float endDisplayBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two display beats.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfType(string noteTypeString)`
 - Returns every Note Data object in the chart of a specific Note Type in string form.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInBeatRange(string noteTypeString, float startBeat, float endBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two beats.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInTimeRange(string noteTypeString, float startTime, float endTime)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two timestamps.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 `xdrv.GetNoteDataOfTypeInDisplayBeatRange(string noteTypeString, float startDisplayBeat, float endDisplayBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two display beats.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
 
 Each Note Data object has different values which can be used however you like, but cannot be modified.
 
@@ -506,6 +514,24 @@ Each Note Data object has different values which can be used however you like, b
 
 ## Other Functions
 
+### Timing Value Conversion Functions
+
+<details>
+<summary>Timing Value Conversion Documentation</summary>
+
+As of 1.6.3, you can now call various functions to convert timing values to other timing values.
+
+- `xdrv.GetTimeAtBeat(float beat)`
+  - Returns the time at a given beat.
+
+- `xdrv.GetBeatAtTime(float time)`
+  - Returns the beat at a given time.
+
+- `xdrv.GetDisplayBeatAtBeat(float beat)`
+  - Returns the "display beat" at a given beat. Display beats are the display position of a beat, after factoring in `#SCROLL` and `#BPM` timing segments.
+
+</details>
+
 ### Loading Modfiles within Modfiles
 
 <details>
@@ -521,7 +547,7 @@ Example:
 ### Chart Difficulty
 
 <details>
-<summary>Chart Difficulty</summary>
+<summary>Chart Difficulty Documentation</summary>
 
 You can get the current chart's difficulty by calling `xdrv.GetChartDifficulty()`, which returns a number from 0 to 4 based on the difficulty, where 0 is BEGINNER.
 
