@@ -69,35 +69,35 @@ To get a Note Data object, you must obtain one via one of these functions:
 
 `xdrv.GetNoteDataOfType(int noteType)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of int types, you can optionally use `GetNoteDataOfIntTypes` instead.
 
 `xdrv.GetNoteDataOfTypeInBeatRange(int noteType, float startBeat, float endBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two beats.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of int types, you can optionally use `GetNoteDataOfIntTypesInBeatRange` instead.
 
 `xdrv.GetNoteDataOfTypeInTimeRange(int noteType, float startTime, float endTime)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two timestamps.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of int types, you can optionally use `GetNoteDataOfIntTypesInTimeRange` instead.
 
 `xdrv.GetNoteDataOfTypeInDisplayBeatRange(int noteType, float startDisplayBeat, float endDisplayBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in integer form within a range of two display beats.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of int types, you can optionally use `GetNoteDataOfIntTypesInDisplayBeatRange` instead.
 
 `xdrv.GetNoteDataOfType(string noteTypeString)`
 - Returns every Note Data object in the chart of a specific Note Type in string form.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of string types, use `GetNoteDataOfStringTypes` instead.
 
 `xdrv.GetNoteDataOfTypeInBeatRange(string noteTypeString, float startBeat, float endBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two beats.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of string types, use `GetNoteDataOfStringTypesInBeatRange` instead.
 
 `xdrv.GetNoteDataOfTypeInTimeRange(string noteTypeString, float startTime, float endTime)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two timestamps.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of string types, use `GetNoteDataOfStringTypesInTimeRange` instead.
 
 `xdrv.GetNoteDataOfTypeInDisplayBeatRange(string noteTypeString, float startDisplayBeat, float endDisplayBeat)`
 - Returns every Note Data object in the chart of a specific Note Type in string form within a range of two display beats.
-  - Can additionally take an array of Note Types to return Note Data from multiple Note Types.
+  - Can additionally take an array of Note Types to return Note Data from multiple Note Types. If using an array of string types, use `GetNoteDataOfStringTypesInDisplayBeatRange` instead.
 
 Each Note Data object has different values which can be used however you like, but cannot be modified.
 
@@ -611,6 +611,13 @@ Additionally, you can get a specific color channel using `xdrv.GetPlayerNoteColo
 You can also use `xdrv.GetPlayerNoteColorRed(int column)`, `xdrv.GetPlayerNoteColorGreen(int column)`, `xdrv.GetPlayerNoteColorBlue(int column)`, and `xdrv.GetPlayerNoteColorAlpha(int column)`.
 
 Additionally, you can call these functions with snake_case. Example: `xdrv.get_player_note_color`
+
+As of 1.9.9, you can get the player's note color as a hex color.
+
+`xdrv.GetPlayerNoteColorHex(int column)` will return a string with a hex color in the format "#RRGGBBAA".
+
+Additionally, you can call this function with snake_case. Example: `xdrv.get_player_note_color_hex`
+
 </details>
 
 <details>

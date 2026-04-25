@@ -17,6 +17,9 @@ Chart Metadata starts at the top of the .xdrv file.
 `MUSIC_ARTIST`, is the song's artist or musician name.
 > `MUSIC_ARTIST=Song Artist`
 
+`MUSIC_SOURCE`, is the source of the audio. This adds a small piece of text on the song info slide on the right side of the screen.
+> `MUSIC_SOURCE=Example Copyright Holder`
+
 `MUSIC_CREDIT`, is used whenever a song belongs to another game or album, and you want to reference it. You can put any string of text in this field. Using this with the 'SUBTITLE' field will make it alternate between the two.
 > `MUSIC_CREDIT=From "Game"`
 
