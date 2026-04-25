@@ -655,7 +655,7 @@ The user can also use left/right arrow keys to navigate between checkpoints, and
 
 ### Show Mods
 
-Show Mods is enabled by providing the launch option `-showmods`.
+Pressing `F9` when `-chartdev` is enabled in gameplay will toggle the Show Mods feature.
 
 This feature enables the game's debug text in gameplay if Chart Developer Mode is enabled.
 
