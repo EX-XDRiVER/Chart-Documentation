@@ -1,0 +1,118 @@
+## Events for Background: BackgroundRush
+
+.xdrv Metadata: `STAGE_BACKGROUND=BackgroundRush`
+
+The format of events is as follows: `#EVENT=EventName,Argument1,Argument2` etc..
+
+- EnableBloomBeat (arg 1 (optional): start now)
+  - Enables bloom on every whole beat, optionally a boolean can be provided to start the 'BloomBeat' effect immediately.
+- DisableBloomBeat
+  - Disables the above event effect.
+- RunChevronPulse (arg 1: duration (optional, default 1))
+  - Runs a chevron "pulse". Starts from the back chevrons and moves up to the front ones over a specified duration in beats.
+- RunLeftChevronPulse (arg 1: duration (optional, default 1))
+  - Runs a chevron pulse on the left side.
+- RunRightChevronPulse (arg 1: duration (optional, default 1))
+  - Runs a chevron pulse on the right side.
+- ShowCharacters
+  - Shows the characters along the bottom of the screen. Usually takes ~2 beats to complete.
+- HideCharacters
+  - Hides the characters along the bottom of the screen. Usually takes ~1 beat to complete.
+- FlipCharacters
+  - Flips the characters along the bottom of the screen around. Takes 1 beat to complete.
+- SetBloomIntensity (arg 1: intensity, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease) (optional)
+  - Sets the intensity of the bloom effect in the scene over time.
+  - Alias: EaseBloomIntensity
+- SetBloomDiffusion (arg 1: diffusion, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the diffusion of the bloom effect in the scene over time.
+  - Alias: EaseBloomDiffusion
+- SetChevronAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the chevron opacity to the specified value.
+  - Alias: EaseChevronAlpha
+- SetLeftChevronAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left side chevron opacity to the specified value, multiplicatively with SetChevronAlpha.
+  - Alias: EaseLeftChevronAlpha
+- SetRightChevronAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right side chevron opacity to the specified value, multiplicatively with SetChevronAlpha.
+  - Alias: EaseRightChevronAlpha
+- SetGridAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the grid opacity to the specified value.
+  - Alias: EaseGridAlpha
+- SetTopGridAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the top grid opacity to the specified value, multiplicatively with SetGridAlpha.
+  - Alias: EaseTopGridAlpha
+- SetBottomGridAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the bottom grid opacity to the specified value, multiplicatively with SetGridAlpha.
+  - Alias: EaseBottomGridAlpha
+- SetLeftBackgroundAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left gradient background opacity to the specified value.
+  - Alias: EaseLeftBackgroundAlpha
+- SetRightBackgroundAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right gradient background opacity to the specified value.
+  - Alias: EaseRightBackgroundAlpha
+- SetTopBackgroundAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left gradient background opacity to the specified value.
+  - Alias: EaseTopBackgroundAlpha
+- SetBottomBackgroundAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right gradient background opacity to the specified value.
+  - Alias: EaseBottomBackgroundAlpha
+- SetParticleAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the particle opacity to the specified value.
+  - Alias: EaseParticleAlpha
+- SetChevronPulseAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the chevron pulse opacity to the specified value.
+  - Alias: EaseChevronPulseAlpha
+- SetLeftChevronPulseAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left side chevron pulse opacity to the specified value, multiplicatively with SetChevronPulseAlpha.
+  - Alias: EaseLeftChevronPulseAlpha
+- SetRightChevronPulseAlpha (arg 1: alpha, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right side chevron pulse opacity to the specified value, multiplicatively with SetChevronPulseAlpha.
+  - Alias: EaseRightChevronPulseAlpha
+- SetVolumeRotation (arg 1: degrees, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the rotation of the background (or "volume" as it is referred to internally) to the value in degrees. Values over 360 and below 0 will NOT clamp automatically.
+  - Alias: EaseVolumeRotation
+- SetChevronColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the chevron colors to the specified hex color. (Formatted "#RRGGBB")
+  - Alias: EaseChevronColor
+- SetLeftChevronColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left side chevron colors to the specified hex color, additively with SetChevronColor.
+  - Alias: EaseLeftChevronColor
+- SetRightChevronColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right side chevron colors to the specified hex color, additively with SetChevronColor.
+  - Alias: EaseRightChevronColor
+- SetGridColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the grid colors to the specified hex color.
+  - Alias: EaseGridColor
+- SetTopGridColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the top grid chevron colors to the specified hex color, additively with SetChevronColor.
+  - Alias: EaseTopGridColor
+- SetBottomGridColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the bottom grid colors to the specified hex color, additively with SetChevronColor.
+  - Alias: EaseBottomGridColor
+- SetBackgroundColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the background color to the specified hex color.
+  - Alias: EaseBackgroundColor
+- SetLeftBackgroundColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left background gradient color to the specified hex color.
+  - Alias: EaseLeftBackgroundColor
+- SetRightBackgroundColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right background gradient color to the specified hex color.
+  - Alias: EaseRightBackgroundColor
+- SetTopBackgroundColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the top background gradient color to the specified hex color.
+  - Alias: EaseTopBackgroundColor
+- SetBottomBackgroundColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the bottom background gradient color to the specified hex color.
+  - Alias: EaseBottomBackgroundColor
+- SetParticleColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the particle color to the specified hex color.
+  - Alias: EaseParticleColor
+- SetChevronPulseColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the chevron pulse color to the specified hex color.
+  - Alias: EaseChevronPulseColor
+- SetLeftChevronPulseColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the left side chevron pulse color to the specified hex color, additively with SetChevronPulseColor.
+  - Alias: EaseLeftChevronPulseColor
+- SetRightChevronPulseColor (arg 1: color, arg 2: duration (optional), arg 3: time based (optional), arg 4: ease (optional))
+  - Sets the right side chevron pulse color to the specified hex color, additively with SetChevronPulseColor.
+  - Alias: EaseRightChevronPulseColor

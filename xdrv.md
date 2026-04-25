@@ -71,6 +71,9 @@ Chart Metadata starts at the top of the .xdrv file.
 `CHART_LEVEL`, is an integer value between 1 and 15 that determines the level of the chart.
 > `CHART_LEVEL=15`
 
+`CHART_LEVEL_STYLE`, is an enum/string value. Only active when April Fools is enabled. Can be set to [one of many values](xdrv-chartlevelstyles.md).
+> `CHART_LEVEL_STYLE=NORMAL`
+
 `CHART_UNLOCK`, is a file path to an unlock .lua file. More documentation about unlock files in unlocks.md.
 > `CHART_UNLOCK=EXTREME_UNLOCK.lua`
 
