@@ -7,7 +7,7 @@
 Mods for a chart are stored in a .lua file! This file is executed at gameplay.
 There are two kinds of mod initialization calls, "Mod" and "Ease".
 
-For basic chart mods, first we need to call the container object which stores all of our chart mods.
+For basic track mods, first we need to call the container object which stores all of our track mods.
 To call this object's method, we use `xdrv.Mod` or `xdrv.Set`.
 The arguments it takes are:
 - The mod name
@@ -190,7 +190,7 @@ Each Note Data object has different values which can be used however you like, b
 </details>
 
 <details>
-<summary>List of all Chart Mods</summary>
+<summary>List of all Track Mods</summary>
 
 "speed" (Column specific variants: "speedX" where X is 1-9, Aliases: "noteX_speed" where X is 1-9, "gearleft_speed", "gearright_speed", "drift_speed")
 - Changes the scroll speed multiplier independent of actual scroll speed.
